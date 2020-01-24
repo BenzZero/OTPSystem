@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\535504c4b377f3eb6b8002fdfea7e0705c9e72e9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_02a2d3ef60b75040397b0c32f1f450dac75b1367.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\4d6bb4c15757e55109b43f365a2a9141edf4d4e3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_12096e7ca1a97d4afcb9ba00777db4fff7c8c9c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\a9db00af1bba40055b580931eeeea5f6370d0000\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_6af7a1516a9936fe22f4e28cc633012c2fd753a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\db2715d0dcf8c682b0fdf8feafabaa48a7f7e621\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_be03de6ac01ecc9f811812a083e99a8f6b391591.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\f92481af3f4f94081ec493bf96508cded9844308\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_52255125c744d5e009a3647a62cc397b2eb3728d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_a52f7aafd48d0940dc2b3183f439b4a0b853ca7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\2a68f13c327b7aa5b1d842c86d88bafcf46fad34\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a6a1348ac6f3e2890a2cd7637b1e18f969ccc1e5">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_fb2b0802b4bcc5f0116f2c3667a4105c102d7350.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\ab1dbd8c465634efefbfb2cc98d9833a27e3991d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_5810861225b2a71048713bff50d48a16e70f181e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\ad02c51bbade8fd700f42459aca9f226c33f24da\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_2ee82929921af6a1bf319ad044d329167ddaa85f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_6e2b024ba61939901a688aa5efcdc05516ba4683.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\0fbd841bb14f085e58837ccb0b29491b8ef307c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_e1c354384b8aabfcf18439f71b0639b7e5983482.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\okio-1.9.0_a79685e92cfbe50860e7e7cd80f2fa4712365baf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dell\.android\build-cache\38d8991806a824c63eeeed439bf42d2d8c28bbae\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\android-fundamentals-phone-sms\SmsMessaging\app\build\intermediates\pre-dexed\debug\classes_4fb1b539b7e10d4998c5563deda2e8395079c285.jar" />
+    </item>
+
+</items>

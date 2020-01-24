@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Dell\\Desktop\\AutoSMS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml",
+        "source": "C:\\Users\\Dell\\Desktop\\AutoSMS\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\android-fundamentals-phone-sms\\SmsMessaging\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml",
+        "source": "D:\\android-fundamentals-phone-sms\\SmsMessaging\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dell\\Desktop\\AutoSMSChadalotto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml",
+        "source": "C:\\Users\\Dell\\Desktop\\AutoSMSChadalotto\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_message_black_24dp.xml"
+    }
+]
