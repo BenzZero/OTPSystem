@@ -1,101 +1,170 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:17:1-50:12
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:18:5-47
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:17:11-69
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:20:5-67
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:20:22-64
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:21:5-70
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:5-70
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:21:22-67
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:22-67
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:22:5-66
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:22:22-64
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:23:5-79
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:23:22-76
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:5-76
+	android:name
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:22-73
 application
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:25:5-48:19
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Dell\.android\build-cache\535504c4b377f3eb6b8002fdfea7e0705c9e72e9\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Dell\.android\build-cache\ad02c51bbade8fd700f42459aca9f226c33f24da\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Dell\.android\build-cache\0fbd841bb14f085e58837ccb0b29491b8ef307c7\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Dell\.android\build-cache\38d8991806a824c63eeeed439bf42d2d8c28bbae\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Dell\.android\build-cache\ab1dbd8c465634efefbfb2cc98d9833a27e3991d\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Dell\.android\build-cache\db2715d0dcf8c682b0fdf8feafabaa48a7f7e621\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Dell\.android\build-cache\f92481af3f4f94081ec493bf96508cded9844308\output\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Dell\.android\build-cache\4d6bb4c15757e55109b43f365a2a9141edf4d4e3\output\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Dell\.android\build-cache\a9db00af1bba40055b580931eeeea5f6370d0000\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Dell\.android\build-cache\2a68f13c327b7aa5b1d842c86d88bafcf46fad34\output\AndroidManifest.xml:9:5-20
-	android:label
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:28:9-41
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:12:5-35:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:29:9-35
-	android:allowBackup
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:26:9-35
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:15:9-41
+	android:roundIcon
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:16:9-54
 	android:icon
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:27:9-43
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:30:9-40
-activity#com.example.android.smsmessaging.MainActivity
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:32:9-38:20
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:18:9-40
+activity#com.example.acceptsms.MainActivity
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:32:19-79
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:33:13-37:29
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:36:27-74
-receiver#com.example.android.smsmessaging.MySmsReceiver
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:40:9-47:20
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:27-74
+receiver#com.example.acceptsms.MySmsReceiver
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:27:9-34:20
 	android:enabled
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:42:13-35
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:29:13-35
 	android:exported
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:41:13-74
-intent-filter#android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:44:13-46:29
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:28:13-63
+intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:31:13-33:29
 action#android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:45:17-81
+ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:17-81
 	android:name
-		ADDED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml:45:25-79
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:25-79
 uses-sdk
-INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Dell\.android\build-cache\535504c4b377f3eb6b8002fdfea7e0705c9e72e9\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.2.0] C:\Users\Dell\.android\build-cache\ad02c51bbade8fd700f42459aca9f226c33f24da\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\Dell\.android\build-cache\0fbd841bb14f085e58837ccb0b29491b8ef307c7\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\Dell\.android\build-cache\38d8991806a824c63eeeed439bf42d2d8c28bbae\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\Dell\.android\build-cache\ab1dbd8c465634efefbfb2cc98d9833a27e3991d\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\Dell\.android\build-cache\db2715d0dcf8c682b0fdf8feafabaa48a7f7e621\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\Dell\.android\build-cache\f92481af3f4f94081ec493bf96508cded9844308\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\Dell\.android\build-cache\4d6bb4c15757e55109b43f365a2a9141edf4d4e3\output\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:25.2.0] C:\Users\Dell\.android\build-cache\a9db00af1bba40055b580931eeeea5f6370d0000\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\Dell\.android\build-cache\2a68f13c327b7aa5b1d842c86d88bafcf46fad34\output\AndroidManifest.xml:7:5-43
-	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.2.0] C:\Users\Dell\.android\build-cache\535504c4b377f3eb6b8002fdfea7e0705c9e72e9\output\AndroidManifest.xml:23:9-75
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Dell\Desktop\AutoSMSChadalotto\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml

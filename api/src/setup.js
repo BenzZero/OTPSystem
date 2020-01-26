@@ -34,7 +34,7 @@ let checkToken = (req, res, next) => {
 const setupRoutes = function (app, aWss) {
   app.use(`/${conf.apiName}/login`, require('./api/login/login.controller'))
   app.use(`/${conf.apiName}/register`, require('./api/register/register.controller'))
-  app.ws(`/${conf.apiName}/echo`, require('./ws/echo'))
+  app.ws(`/${conf.apiName}/messages`, require('./ws'))
 }
 
 const invalidRoute = (app) => {

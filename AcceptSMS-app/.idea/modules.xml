@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AutoSMSChadalotto.iml" filepath="$PROJECT_DIR$/AutoSMSChadalotto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AcceptSMS.iml" filepath="$PROJECT_DIR$/AcceptSMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
