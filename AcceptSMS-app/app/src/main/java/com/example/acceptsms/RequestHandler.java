@@ -19,7 +19,7 @@ public class RequestHandler {
         URL url = new URL(r_url);
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestProperty ("authorization", BuildConfig.TOKEN);
+        conn.setRequestProperty ("authorization", "xxxxxxx");
         conn.setReadTimeout(200000);
         conn.setConnectTimeout(200000);
         conn.setRequestMethod("POST");
@@ -53,7 +53,7 @@ public class RequestHandler {
         URL obj = new URL(url);
 
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        con.setRequestProperty ("authorization", BuildConfig.TOKEN);
+        con.setRequestProperty ("authorization", "xxxxxxx");
         con.setRequestMethod("GET");
         int responseCode = con.getResponseCode();
         System.out.println("Response Code :: " + responseCode);
@@ -70,45 +70,6 @@ public class RequestHandler {
         } else {
             return "";
         }
-    }
-
-    public static String webSocket(String r_url , JSONObject postDataParams) throws Exception {
-        URL url = new URL(r_url);
-
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestProperty ("authorization", BuildConfig.TOKEN);
-        conn.setReadTimeout(200000);
-        conn.setConnectTimeout(200000);
-        conn.setRequestMethod("POST");
-        conn.setDoInput(true);
-        conn.setDoOutput(true);
-        OutputStream os = conn.getOutputStream();
-
-        BufferedWriter writer = new BufferedWriter( new OutputStreamWriter(os, "UTF-8"));
-        writer.write(encodeParams(postDataParams));
-        writer.flush();
-        writer.close();
-        os.close();
-
-        int responseCode=conn.getResponseCode(); // To Check for 200
-        if (responseCode == HttpsURLConnection.HTTP_OK) {
-
-            BufferedReader in=new BufferedReader( new InputStreamReader(conn.getInputStream()));
-            StringBuffer sb = new StringBuffer("");
-            String line="";
-            while((line = in.readLine()) != null) {
-                sb.append(line);
-                break;
-            }
-            in.close();
-            return sb.toString();
-        }
-        return null;
-    }
-
-    private void attemptSend(String messages) {
-        WebSocket mSocket = new WebSocket();
-        mSocket.mSocket.emit("new message", messages);
     }
 
     private static String encodeParams(JSONObject params) throws Exception {

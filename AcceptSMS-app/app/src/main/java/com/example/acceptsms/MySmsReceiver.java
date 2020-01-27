@@ -27,11 +27,9 @@ import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
 
-import org.json.JSONObject;
+import com.github.nkzawa.socketio.client.Socket;
 
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
 
 

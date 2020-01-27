@@ -27,6 +27,7 @@ const messages = async (ws, req) => {
     const db = await loadDB()
     const { messages, type, smsId } = JSON.parse(msg)
 
+    console.log(messages, type, smsId)
     try {
       const message = await db.query(`INSERT INTO messages (messages, type) VALUES ('${messages}', '${type}')`, (err, results) => {
         if (!err) {

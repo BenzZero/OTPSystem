@@ -13,17 +13,18 @@ android {
     }
     buildTypes {
         def SERVER_URL = "SERVER_URL"
-        def TOKEN = "TOKEN"
-        def ip = "\"http://192.168.0.102:5000/api\""
-        def token = "\"rgxdrt\""
+        def SERVER_URLWS = "SERVER_URLWS"
+        def ip = "\"http://192.168.0.107:3000/api\""
+        def ws = "\"http://192.168.0.107:3000/api\""
+
         debug {
             buildConfigField "String", SERVER_URL, ip
-            buildConfigField "String", TOKEN, token
+            buildConfigField "String", SERVER_URLWS, ws
         }
 
         release {
             buildConfigField "String", SERVER_URL, ip
-            buildConfigField "String", TOKEN, token
+            buildConfigField "String", SERVER_URLWS, ws
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
