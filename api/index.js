@@ -8,7 +8,8 @@ import setup from './src/setup'
 import database from './src/config/db'
 
 log4js.configure(require('./src/config/log'))
-const { app, getWss, applyTo } = expressWs(express())
+
+const { app, getWss } = expressWs(express())
 
 app.use(express.static('public'));
 export const aWss = getWss('/');
