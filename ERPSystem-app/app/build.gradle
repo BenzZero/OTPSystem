@@ -12,7 +12,20 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+
+        def SERVER_URL = "SERVER_URL"
+        def SERVER_URLWS = "SERVER_URLWS"
+        def ip = "\"http://192.168.0.107:3000/api\""
+        def ws = "\"ws://192.168.0.107:3000/api\""
+
+        debug {
+            buildConfigField "String", SERVER_URL, ip
+            buildConfigField "String", SERVER_URLWS, ws
+        }
+
         release {
+            buildConfigField "String", SERVER_URL, ip
+            buildConfigField "String", SERVER_URLWS, ws
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -23,6 +36,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'tech.gusavila92:java-android-websocket-client:1.2.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

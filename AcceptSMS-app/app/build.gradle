@@ -14,8 +14,8 @@ android {
     buildTypes {
         def SERVER_URL = "SERVER_URL"
         def SERVER_URLWS = "SERVER_URLWS"
-        def ip = "\"http://172.16.4.48:3000/api\""
-        def ws = "\"ws://172.16.4.48:3000/api\""
+        def ip = "\"http://192.168.0.107:3000/api\""
+        def ws = "\"ws://192.168.0.107:3000/api\""
 
         debug {
             buildConfigField "String", SERVER_URL, ip

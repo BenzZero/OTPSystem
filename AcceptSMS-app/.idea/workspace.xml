@@ -11,8 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8915d8d3-d67e-4144-b1e8-33f1d915436b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
@@ -22,14 +20,17 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/SocketInstance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPSystem-app/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPSystem-app/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ERPSystem-app/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPSystem-app/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/src/ws/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/ws/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/otp.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../database/otp.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/otp.mwb.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../database/otp.mwb.bak" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_25" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -57,78 +59,23 @@
       </state>
     </system>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1332941909">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="gradle" value="12" />
-          <entry key="java" value="17" />
-          <entry key="pro" value="2" />
-          <entry key="properties" value="6" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Groovy" value="12" />
-          <entry key="JAVA" value="17" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="ProGuard File" value="2" />
-          <entry key="Properties" value="6" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gradle" value="5" />
-          <entry key="java" value="375" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="375" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
             </state>
           </provider>
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-                <element signature="e#1719#1720#0" expanded="true" />
-                <element signature="e#1780#1781#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -182,21 +129,23 @@
         <option value="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
         <option value="$PROJECT_DIR$/app/src/debug/res/xml/network_security_config.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/IO.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/SocketIOOTP.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/Notification.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClient.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="1386" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="401" />
+    <option name="y" value="136" />
+    <option name="width" value="1828" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -207,6 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -217,13 +167,7 @@
             <path>
               <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="acceptsms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
@@ -233,7 +177,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -253,6 +196,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="Pixel_XL_API_25" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -277,6 +221,7 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
@@ -359,11 +304,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="401" y="136" width="1828" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23600605" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16402715" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -372,14 +317,14 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32932165" />
-      <window_info anchor="bottom" id="Logcat" order="1" visible="true" weight="0.44354838" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.44310722" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32932165" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32822758" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32903227" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.64354837" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32932165" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" weight="0.32932165" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -416,9 +361,6 @@
       <window_info anchor="right" id="Preview" order="5" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/acceptsms/ExampleInstrumentedTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -428,10 +370,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/OkHttpClient.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/os/Build.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/SharedData.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/network_security_config.kt" />
@@ -455,7 +393,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/debug/res/xml/network_security_config.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/IO.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/socket.io-client/0.6.0/d2b5fb7b407a9e5b47d4a60fa7fb1779cbb2c677/socket.io-client-0.6.0-sources.jar!/com/github/nkzawa/socketio/client/Socket.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/RequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -467,9 +404,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
@@ -484,29 +418,8 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/SocketIOOTP.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tech.gusavila92/java-android-websocket-client/1.2.2/b48f83675749e6435690c1f7023694a412b60bf0/java-android-websocket-client-1.2.2-sources.jar!/tech/gusavila92/websocketclient/WebSocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/tech.gusavila92/java-android-websocket-client/1.2.2/b48f83675749e6435690c1f7023694a412b60bf0/java-android-websocket-client-1.2.2-sources.jar!/tech/gusavila92/websocketclient/WebSocketClient.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/Notification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -517,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/acceptsms/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -531,37 +437,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="85" column="78" selection-start-line="85" selection-start-column="78" selection-end-line="85" selection-end-column="78" />
+        <state relative-caret-position="289">
+          <caret line="51" column="69" lean-forward="true" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.nkzawa/socket.io-client/0.6.0/d2b5fb7b407a9e5b47d4a60fa7fb1779cbb2c677/socket.io-client-0.6.0-sources.jar!/com/github/nkzawa/socketio/client/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="431" column="19" selection-start-line="431" selection-start-column="19" selection-end-line="431" selection-end-column="19" />
+          <folding>
+            <element signature="e#4079#4080#0" expanded="true" />
+            <element signature="e#4113#4114#0" expanded="true" />
+            <element signature="e#13093#13094#0" expanded="true" />
+            <element signature="e#13130#13131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="211">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1719#1720#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>

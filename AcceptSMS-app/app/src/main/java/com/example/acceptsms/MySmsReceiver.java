@@ -18,25 +18,18 @@
 package com.example.acceptsms;
 
 import android.annotation.TargetApi;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
-import android.view.View;
 import android.widget.Toast;
+
+import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
-
-import androidx.core.app.NotificationCompat;
-import androidx.core.content.ContextCompat;
-
 
 public class MySmsReceiver extends BroadcastReceiver {
     private static final String TAG = MySmsReceiver.class.getSimpleName();
@@ -54,6 +47,8 @@ public class MySmsReceiver extends BroadcastReceiver {
         // Get the SMS message.
         Bundle bundle = intent.getExtras();
         SmsMessage[] msgs;
+        String bankname = "";
+        String type = "SMS";
         String strMessage = "";
         String format = bundle.getString("format");
 
@@ -79,12 +74,31 @@ public class MySmsReceiver extends BroadcastReceiver {
                 // strMessage += msgs[i].getOriginatingAddress();
                 // strMessage += "from SMS : " + msgs[i].getMessageBody() + "\n";
 
-                strMessage = msgs[i].getMessageBody();
+                if(msgs[i].getOriginatingAddress().equals("027777777") || msgs[i].getOriginatingAddress().equals("SCB")) {
+                    bankname = "SCB";
+                } else if (msgs[i].getOriginatingAddress().equals("028888888") || msgs[i].getOriginatingAddress().equals("KBank")) {
+                    bankname = "KBANK";
+                } else if (msgs[i].getOriginatingAddress().equals("021111111") || msgs[i].getOriginatingAddress().equals("Krungthai")) {
+                    bankname = "KTB";
+                } else if (msgs[i].getOriginatingAddress().equals("026455555") || msgs[i].getOriginatingAddress().equals("BANGKOKBANK")) {
+                    bankname = "BBC";
+                }
 
-//                Toast.makeText(context, a+"\n"+b+"\n"+c+"\n"+d, Toast.LENGTH_LONG).show();
-
-                Toast.makeText(context, strMessage, Toast.LENGTH_LONG).show();
-                webSocketClient.sendWebSocketClient(strMessage);
+                if(!bankname.equals("")) {
+                    strMessage = msgs[i].getMessageBody();
+                    if(strMessage.indexOf("OTP") != -1) {
+                        type = "OTP";
+                    }
+                    JSONObject postDataParams = new JSONObject();
+                    try {
+                        postDataParams.put("message", strMessage);
+                        postDataParams.put("type", type);
+                        postDataParams.put("bankname", bankname);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    webSocketClient.sendWebSocketClient(postDataParams.toString());
+                }
                 try {
                     new RequestAsync(strMessage).execute().get();
                 } catch (ExecutionException e) {

@@ -2,6 +2,8 @@ import { aWss } from '../../index'
 import jwt from 'jsonwebtoken'
 import conf from '../config'
 import loadDB from '../config/db'
+import log4js from 'log4js'
+const logErr = log4js.getLogger('error')
 
 const broadcast = (clients, message) => {
   clients.forEach((client) => {
@@ -14,11 +16,12 @@ const messages = async (ws, req) => {
   const { token } = req.params
 
   if (token) {
-    jwt.verify(token, conf.secretKey, (err) => {
+    jwt.verify(token, conf.secretKey, (err, decoded) => {
       if (err) {
         ws.send('400')
         ws.close()
       } else {
+        req.decoded = decoded.username
         ws.send('200')
       }
     })
@@ -26,29 +29,21 @@ const messages = async (ws, req) => {
 
   ws.on('message', async (msg) => {
     const db = await loadDB()
-    console.log('xxxxxxxxxxxxxxxxxxxxxx')
-    console.log(msg)
-    console.log('xxxxxxxxxxxxxxxxxxxxxx')
-    broadcast(aWss.clients, msg)
-    // const { messages, type, smsId } = JSON.parse(msg)
-
-
-    // console.log(messages, type, smsId)
-    // try {
-    //   const message = await db.query(`INSERT INTO messages (messages, type) VALUES ('${messages}', '${type}')`, (err, results) => {
-    //     if (!err) {
-    //       console.log(messages, type)
-    //       console.log(err)
-    //       console.log(results)
-    //       broadcast(aWss.clients, msg)
-    //     } else {
-    //       console.log(err)
-    //       ws.send('400')
-    //     }
-    //   })
-    // } catch (e) {
-    //   console.log(e)
-    // }
+    try {
+      const { message, type, bankname } = JSON.parse(msg)
+      if (message && type && bankname) {
+        await db.query(`INSERT INTO messages (messages, type, bankname, users_id) VALUES ('${message}', '${type}', '${bankname}', 1)`, (err, results) => {
+          if (!err) {
+            broadcast(aWss.clients, msg)
+          } else {
+            ws.send('400')
+          }
+        })
+      }
+    } catch (e) {
+      logErr.error(e)
+      console.log(e)
+    }
   })
 
   ws.on('close', async (msg) => {
