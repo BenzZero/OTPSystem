@@ -12,18 +12,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.github.nkzawa.emitter.Emitter;
-import com.github.nkzawa.socketio.client.IO;
-import com.github.nkzawa.socketio.client.Socket;
-
-import java.net.URISyntaxException;
-
-
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
-    private Socket mSocket;
-    private static final String URL = "http://192.168.0.107:3000/api/messages/eyJhbGciO";
 
     /**
      * Creates the activity, sets the view, and checks for SMS permission.
@@ -31,17 +22,6 @@ public class MainActivity extends AppCompatActivity {
      * @param savedInstanceState Instance state
      */
 
-     private Emitter.Listener onConnectError = new Emitter.Listener() {
-        @Override
-        public void call(Object... args) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(getApplicationContext(), "Unable to connect to NodeJS server", Toast.LENGTH_LONG).show();
-                }
-            });
-        }
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,24 +30,8 @@ public class MainActivity extends AppCompatActivity {
         // Check to see if SMS is enabled.
         if (android.os.Build.VERSION.SDK_INT > 9)
         {
-            try {
-                mSocket = IO.socket(URL); // Your server's URL
-            }
-            catch (URISyntaxException e) {
-                throw new RuntimeException(e);
-            }
-
-            mSocket.on(Socket.EVENT_CONNECT_ERROR, onConnectError);
-            mSocket.on(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
-            mSocket.connect();
-
-            Log.v("AvisActivity", "try to connect");
-            mSocket.connect();
-            Log.v("AvisActivity", "connection sucessful");
-
-            if (mSocket.connected()){
-                Toast.makeText(MainActivity.this, "Socket Connected!!",Toast.LENGTH_SHORT).show();
-            }
+            WebSocketClientClass webSocketClient = new WebSocketClientClass();
+            webSocketClient.connectWebSocketClient();
 
             StrictMode.ThreadPolicy policy = new
                     StrictMode.ThreadPolicy.Builder().permitAll().build();

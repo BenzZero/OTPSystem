@@ -18,25 +18,30 @@
 package com.example.acceptsms;
 
 import android.annotation.TargetApi;
+import android.app.Notification;
+import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
+import android.view.View;
 import android.widget.Toast;
-
-import com.github.nkzawa.socketio.client.Socket;
-
 import org.json.JSONObject;
 import java.util.concurrent.ExecutionException;
+
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 
 public class MySmsReceiver extends BroadcastReceiver {
     private static final String TAG = MySmsReceiver.class.getSimpleName();
     public static final String pdu_type = "pdus";
-
+    private WebSocketClientClass webSocketClient = new WebSocketClientClass();
     /**
      * Called when the BroadcastReceiver is receiving an Intent broadcast.
      *
@@ -79,6 +84,7 @@ public class MySmsReceiver extends BroadcastReceiver {
 //                Toast.makeText(context, a+"\n"+b+"\n"+c+"\n"+d, Toast.LENGTH_LONG).show();
 
                 Toast.makeText(context, strMessage, Toast.LENGTH_LONG).show();
+                webSocketClient.sendWebSocketClient(strMessage);
                 try {
                     new RequestAsync(strMessage).execute().get();
                 } catch (ExecutionException e) {
@@ -116,5 +122,4 @@ public class MySmsReceiver extends BroadcastReceiver {
             }
         }
     }
-
 }

@@ -12,6 +12,7 @@ const broadcast = (clients, message) => {
 const messages = async (ws, req) => {
   console.log('Client connected..');
   const { token } = req.params
+
   if (token) {
     jwt.verify(token, conf.secretKey, (err) => {
       if (err) {
@@ -25,24 +26,29 @@ const messages = async (ws, req) => {
 
   ws.on('message', async (msg) => {
     const db = await loadDB()
-    const { messages, type, smsId } = JSON.parse(msg)
+    console.log('xxxxxxxxxxxxxxxxxxxxxx')
+    console.log(msg)
+    console.log('xxxxxxxxxxxxxxxxxxxxxx')
+    broadcast(aWss.clients, msg)
+    // const { messages, type, smsId } = JSON.parse(msg)
 
-    console.log(messages, type, smsId)
-    try {
-      const message = await db.query(`INSERT INTO messages (messages, type) VALUES ('${messages}', '${type}')`, (err, results) => {
-        if (!err) {
-          console.log(messages, type)
-          console.log(err)
-          console.log(results)
-          broadcast(aWss.clients, msg)
-        } else {
-          console.log(err)
-          ws.send('400')
-        }
-      })
-    } catch (e) {
-      console.log(e)
-    }
+
+    // console.log(messages, type, smsId)
+    // try {
+    //   const message = await db.query(`INSERT INTO messages (messages, type) VALUES ('${messages}', '${type}')`, (err, results) => {
+    //     if (!err) {
+    //       console.log(messages, type)
+    //       console.log(err)
+    //       console.log(results)
+    //       broadcast(aWss.clients, msg)
+    //     } else {
+    //       console.log(err)
+    //       ws.send('400')
+    //     }
+    //   })
+    // } catch (e) {
+    //   console.log(e)
+    // }
   })
 
   ws.on('close', async (msg) => {

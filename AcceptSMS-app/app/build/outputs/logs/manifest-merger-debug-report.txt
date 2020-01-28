@@ -1,172 +1,172 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\33908e00ca79b45f90e7fb37f9709b0c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\2db54c4d3d5f77d31f7c01c2978537d8\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\04ed37f888c3545fbb2e1610c1b5ae59\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\cf473ef53283ff79cfbbaeaed5e6aa72\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e89edc44096552723814fe0b777833de\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\7a3a4c2bf8909903959fb0234f49a006\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\15b69342d964634537bacc7bc33f41d8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\c3f878cc2554f16e505fddf80ad4919f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\fcdd9c7021247f53b4241c7d908b3930\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\9ea012849cdea086e92fa5a98bc108b5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\0f8860ab594b9cebcb12b43cb948a492\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\f502fe591eaaca80a38974a1bc4191b8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3c901ade87ba9c32c69cc2fe8a3e9d8\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\af41b54ad6a9cb9c0d78e7b8db54f9a9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\d7f2dca106f68fbcf589eeaa43dc2bb2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\a4b13e30d668dc8a83d22d12c29968a4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\38aa66bdfb7b3390b7d296794c371ebd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\be6f45845a137bd853c783793b9e1fc8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\59fa832b945bb3eaeda0c341fe3567f8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\5e2897e90dd081727a06f2212200dc19\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:3:5-36
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:5-70
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:5-70
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:22-67
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:6:22-67
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:5-76
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:5-76
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:22-73
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:9:22-73
 application
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:11:5-35:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:11:5-35:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\2db54c4d3d5f77d31f7c01c2978537d8\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\2db54c4d3d5f77d31f7c01c2978537d8\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3c901ade87ba9c32c69cc2fe8a3e9d8\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3c901ade87ba9c32c69cc2fe8a3e9d8\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:18:9-40
 	android:usesCleartextTraffic
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:16:9-44
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:16:9-44
 activity#com.example.acceptsms.MainActivity
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:23:27-74
 receiver#com.example.acceptsms.MySmsReceiver
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:27:9-34:20
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:27:9-34:20
 	android:enabled
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:29:13-35
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:29:13-35
 	android:exported
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:28:13-63
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:28:13-63
 intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:31:13-33:29
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:31:13-33:29
 action#android.provider.Telephony.SMS_RECEIVED
-ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:17-81
+ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:17-81
 	android:name
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:25-79
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml:32:25-79
 uses-sdk
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f5bdf8930f5b0dade80802408310dda6\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\df9a84c4655b7cf6fd3ecff2821fd9d3\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\a44642c3bddc1cd9ae77529ce5394be3\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\3d66247cb3e229dc7753f5f4d3b35b4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7ae8c1d65b7331eeb350edf91287a16c\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\de3b4aff63e255359d6d83ac6fbdaff5\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\b96b3435fb358bdd7f04f1152639314c\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\bf0848ee243e36dc13961016c6f63543\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9572194aa98bde0ee13f87e0985824cf\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2dfde23a071269bfc073d57af77f7873\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\fb37b7f790edcc9d7fe6d3e5314b8c56\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\9a29ee90fd211f611caccd9d338a3e44\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\1bd2f6a321d0549948d7f1edb5f036d6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\55566c395264c409f125230efea7fd76\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\f031147607d3aeb238f176a00d5e308c\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\2d1f640c1b4beb33089ff5c91bbd7f31\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Benz\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\33908e00ca79b45f90e7fb37f9709b0c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\33908e00ca79b45f90e7fb37f9709b0c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\2db54c4d3d5f77d31f7c01c2978537d8\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\2db54c4d3d5f77d31f7c01c2978537d8\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\04ed37f888c3545fbb2e1610c1b5ae59\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\04ed37f888c3545fbb2e1610c1b5ae59\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\cf473ef53283ff79cfbbaeaed5e6aa72\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\cf473ef53283ff79cfbbaeaed5e6aa72\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e89edc44096552723814fe0b777833de\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e89edc44096552723814fe0b777833de\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\7a3a4c2bf8909903959fb0234f49a006\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\7a3a4c2bf8909903959fb0234f49a006\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\15b69342d964634537bacc7bc33f41d8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\15b69342d964634537bacc7bc33f41d8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\c3f878cc2554f16e505fddf80ad4919f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\c3f878cc2554f16e505fddf80ad4919f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\fcdd9c7021247f53b4241c7d908b3930\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\fcdd9c7021247f53b4241c7d908b3930\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\9ea012849cdea086e92fa5a98bc108b5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\9ea012849cdea086e92fa5a98bc108b5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\0f8860ab594b9cebcb12b43cb948a492\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\0f8860ab594b9cebcb12b43cb948a492\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3219191034d2a90c8829311e65b0387\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\f502fe591eaaca80a38974a1bc4191b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\f502fe591eaaca80a38974a1bc4191b8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3c901ade87ba9c32c69cc2fe8a3e9d8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\e3c901ade87ba9c32c69cc2fe8a3e9d8\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\af41b54ad6a9cb9c0d78e7b8db54f9a9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\af41b54ad6a9cb9c0d78e7b8db54f9a9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\d7f2dca106f68fbcf589eeaa43dc2bb2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\d7f2dca106f68fbcf589eeaa43dc2bb2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\a4b13e30d668dc8a83d22d12c29968a4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\a4b13e30d668dc8a83d22d12c29968a4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\38aa66bdfb7b3390b7d296794c371ebd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\38aa66bdfb7b3390b7d296794c371ebd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\be6f45845a137bd853c783793b9e1fc8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\be6f45845a137bd853c783793b9e1fc8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\59fa832b945bb3eaeda0c341fe3567f8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\59fa832b945bb3eaeda0c341fe3567f8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\5e2897e90dd081727a06f2212200dc19\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\banz_\.gradle\caches\transforms-2\files-2.1\5e2897e90dd081727a06f2212200dc19\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Benz\Documents\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\banz_\Documents\work_Game\OTPSystem\AcceptSMS-app\app\src\main\AndroidManifest.xml
