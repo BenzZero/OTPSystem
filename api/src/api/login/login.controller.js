@@ -7,6 +7,7 @@ const router = express.Router()
 
 const login = async (req, res, next) => {
   const { username, password } = req.body
+  console.log(username, password)
   const db = await loadDB()
   if (username && password) {
     const user = db.query(`SELECT * FROM users WHERE username = '${username}'`, (err, results) => {

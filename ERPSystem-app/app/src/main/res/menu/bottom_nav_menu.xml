@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_otp"
+        android:title="OPT" />
+    <item
+        android:id="@+id/menu_money"
+        android:title="เงินเข้าออก" />
+    <item
+        android:id="@+id/menu_smsAll"
+        android:title="SMS ทั้งหมด" />
+    <item
+        android:id="@+id/menu_setting"
+        android:title="ตั้งค่าบัญชี" />
+</menu>
