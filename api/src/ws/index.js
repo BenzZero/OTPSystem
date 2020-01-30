@@ -20,9 +20,6 @@ const messages = async (ws, req) => {
       if (err) {
         ws.send('400')
         ws.close()
-      } else {
-        req.decoded = decoded.username
-        ws.send('200')
       }
     })
   }

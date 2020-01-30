@@ -34,6 +34,8 @@ let checkToken = (req, res, next) => {
 const setupRoutes = function (app) {
   app.use(`/${conf.apiName}/login`, require('./api/login/login.controller'))
   app.use(`/${conf.apiName}/register`, require('./api/register/register.controller'))
+  app.use(`/${conf.apiName}/messages`, checkToken, require('./api/messages/messages.controller'))
+  app.use(`/${conf.apiName}/setting_account`, checkToken, require('./api/setting_account/setting_account.controller'))
   app.ws(`/${conf.apiName}/messages/:token`, require('./ws'))
 }
 

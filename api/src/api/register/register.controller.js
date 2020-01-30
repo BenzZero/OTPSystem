@@ -12,19 +12,17 @@ const register = async (req, res, next) => {
       const db = await loadDB()
       const saltRounds = 10;
       const hash = await bcrypt.hash(password, saltRounds).then(hash => hash)
-      const user = await db.query(`INSERT INTO users (username, password, name, role, status) VALUES ('${username}', '${hash}', '${name}', 'admin', 1)`, async (err, results) => {
-        if (!err) {
-          const token = signin({ id: results.insertId, username })
-          return res.json({ success: 'register success', token, name })
-        }
-        return res.json({ error: 'register failed', username, password, name, messageErr: err.sqlMessage })
+      await db.query(`INSERT INTO users (username, password, name, role, status) VALUES ('${username}', '${hash}', '${name}', 'admin', 1)`, async (err, results) => {
+        if (err) throw err
+        const token = signin({ id: results.insertId, username })
+        return res.json({ success: 'register success', token, name })
       })
     } else {
       return res.json({ error: 'required', username, password, name })
     }
     return res
   } catch (e) {
-    console.log(e)
+    logErr.error(e)
     return res
   }
 }

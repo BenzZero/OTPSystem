@@ -2,6 +2,7 @@ package com.example.erpsystem;
 
 import android.content.Context;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import org.json.JSONObject;
 
 
 /**
@@ -28,7 +31,7 @@ public class OtpFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    String result;
     private OnFragmentInteractionListener mListener;
 
     public OtpFragment() {
@@ -95,5 +98,19 @@ public class OtpFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public class RequestAsync extends AsyncTask<String,String,String> {
+
+        @Override
+        protected String doInBackground(String... strings) {
+            try {
+                result =  RequestHandler.sendGet(BuildConfig.SERVER_URL + "/login");
+                return result;
+            }
+            catch(Exception e){
+                return new String("Exception: " + e.getMessage());
+            }
+        }
     }
 }

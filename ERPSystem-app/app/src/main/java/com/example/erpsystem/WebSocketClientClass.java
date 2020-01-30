@@ -1,19 +1,40 @@
 package com.example.erpsystem;
 
+import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.content.Intent;
+import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
+
+import androidx.core.app.NotificationCompat;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import tech.gusavila92.websocketclient.WebSocketClient;
 
+import static android.content.Context.NOTIFICATION_SERVICE;
+
 public class WebSocketClientClass {
     private static WebSocketClient webSocketClient;
+    final SharedData sharedData = SharedData.getInstance();
+    private static Context context;
+    final Notification notification = new Notification();
+
+    public WebSocketClientClass (Context context) {
+        this.context = context;
+    }
     public void connectWebSocketClient() {
         URI uri;
         try {
             // Connect to local host
-            uri = new URI(BuildConfig.SERVER_URLWS + "/messages/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJpZCI6NywidXNlcm5hbWUiOiJiZW56In0sImlhdCI6MTU4MDE4OTk4OSwiZXhwIjoxNTgwMjc2Mzg5fQ.2yq3z7hRcU5A6O4-uWL9CpZBdKrQE9PzghwlduvAcwQ");
+            uri = new URI(BuildConfig.SERVER_URLWS + "/messages/" + sharedData.getToken());
         }
         catch (URISyntaxException e) {
             e.printStackTrace();
@@ -25,6 +46,7 @@ public class WebSocketClientClass {
             @Override
             public void onTextReceived(String message) {
                 Log.i("WebSocket", "Message received");
+                showNotification(message);
             }
             @Override
             public void onBinaryReceived(byte[] data) { }
@@ -49,5 +71,25 @@ public class WebSocketClientClass {
 
     public void sendWebSocketClient(String message) {
         webSocketClient.send(message);
+    }
+
+
+    public void showNotification(String message) {
+        try {
+            JSONObject obj = new JSONObject(message);
+            Notification notification =
+                    new NotificationCompat.Builder(context) // this is context
+                            .setSmallIcon(R.mipmap.ic_launcher)
+                            .setContentTitle(obj.getString("type") + " " + obj.getString("bankname"))
+                            .setContentText(obj.getString("message"))
+                            .setAutoCancel(true)
+                            .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+                            .build();
+            NotificationManager notificationManager =
+                    (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.notify(1000, notification);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 }
