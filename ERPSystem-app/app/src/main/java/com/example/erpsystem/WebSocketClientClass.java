@@ -34,7 +34,7 @@ public class WebSocketClientClass {
         URI uri;
         try {
             // Connect to local host
-            uri = new URI(BuildConfig.SERVER_URLWS + "/messages/" + sharedData.getToken());
+            uri = new URI(BuildConfig.SERVER_URLWS + "/socket/messages/" + sharedData.getToken());
         }
         catch (URISyntaxException e) {
             e.printStackTrace();

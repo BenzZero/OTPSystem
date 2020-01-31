@@ -2,6 +2,7 @@ import express from 'express'
 import bcrypt from 'bcrypt'
 import loadDB from '../../config/db'
 import signin from '../../config/signin'
+import conf from '../../config'
 
 const router = express.Router()
 
@@ -10,8 +11,7 @@ const register = async (req, res, next) => {
   try {
     if (username && password && name) {
       const db = await loadDB()
-      const saltRounds = 10;
-      const hash = await bcrypt.hash(password, saltRounds).then(hash => hash)
+      const hash = await bcrypt.hash(password, conf.saltRounds).then(hash => hash)
       await db.query(`INSERT INTO users (username, password, name, role, status) VALUES ('${username}', '${hash}', '${name}', 'admin', 1)`, async (err, results) => {
         if (err) throw err
         const token = signin({ id: results.insertId, username })

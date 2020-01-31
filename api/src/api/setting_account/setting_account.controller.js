@@ -1,6 +1,7 @@
 import express from 'express'
 import bcrypt from 'bcrypt'
 import loadDB from '../../config/db'
+import conf from '../../config'
 import log4js from 'log4js'
 const logErr = log4js.getLogger('error')
 
@@ -22,15 +23,16 @@ const setting_account_get = async (req, res, next) => {
 
 const setting_account_set = async (req, res, next) => {
   try {
-    const { user, password } = req.body
-    const { id } = req.decoded
-    const db = await loadDB()
-    const saltRounds = 10;
-    const hash = await bcrypt.hash(password, saltRounds).then(hash => hash)
-    await db.query(`UPDATE users SET name='${name}', password='${hash}' WHERE id = ${id}`, (err, results) => {
-      if (err) throw err
-      return res.json(results)
-    })
+    const { name, password, passwordConfirm } = req.body
+    if (password === passwordConfirm) {
+      const { id } = req.decoded
+      const db = await loadDB()
+      const hash = await bcrypt.hash(password, conf.saltRounds).then(hash => hash)
+      await db.query(`UPDATE users SET name='${name}', password='${hash}' WHERE id = ${id}`, (err, results) => {
+        if (err) throw err
+        return res.json(results)
+      })
+    }
   } catch (e) {
     logErr.error(e)
     return res

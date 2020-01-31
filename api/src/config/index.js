@@ -26,7 +26,8 @@ const conf = {
       name: process.env.AUTHENAPP_DB_NAME,
       password: process.env.AUTHENAPP_DB_PASSWORD,
     },
-    apiName: 'api'
+    apiName: 'api',
+    saltRounds: 10
   },
   production: {
     root: rootPath,
@@ -45,7 +46,8 @@ const conf = {
       name: process.env.AUTHENAPP_DB_NAME,
       password: process.env.AUTHENAPP_DB_PASSWORD,
     },
-    apiName: 'api'
+    apiName: 'api',
+    saltRounds: 10
   }
 }
 

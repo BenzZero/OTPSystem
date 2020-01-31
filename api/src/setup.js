@@ -36,7 +36,7 @@ const setupRoutes = function (app) {
   app.use(`/${conf.apiName}/register`, require('./api/register/register.controller'))
   app.use(`/${conf.apiName}/messages`, checkToken, require('./api/messages/messages.controller'))
   app.use(`/${conf.apiName}/setting_account`, checkToken, require('./api/setting_account/setting_account.controller'))
-  app.ws(`/${conf.apiName}/messages/:token`, require('./ws'))
+  app.ws(`/${conf.apiName}/socket/messages/:token`, require('./ws'))
 }
 
 const invalidRoute = (app) => {
