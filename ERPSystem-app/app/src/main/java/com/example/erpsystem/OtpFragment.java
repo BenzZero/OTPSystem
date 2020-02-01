@@ -10,8 +10,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 
 /**
@@ -62,6 +67,19 @@ public class OtpFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            try {
+                Toast.makeText(getContext(), "OTP", Toast.LENGTH_LONG).show();
+                result = new RequestAsync().execute().get();
+                JSONArray results = new JSONArray(result);
+                System.out.println("xxxxx");
+                System.out.println(results);
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -105,7 +123,7 @@ public class OtpFragment extends Fragment {
         @Override
         protected String doInBackground(String... strings) {
             try {
-                result =  RequestHandler.sendGet(BuildConfig.SERVER_URL + "/login");
+                result =  RequestHandler.sendGet(BuildConfig.SERVER_URL + "/messages?type=OTP");
                 return result;
             }
             catch(Exception e){

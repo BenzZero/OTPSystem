@@ -2,6 +2,7 @@ package com.example.erpsystem;
 
 import android.content.Context;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
 
 
 /**
@@ -28,6 +34,7 @@ public class SmsAllFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    String result;
 
     private OnFragmentInteractionListener mListener;
 
@@ -59,6 +66,16 @@ public class SmsAllFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+            try {
+                Toast.makeText(getContext(), "SMS", Toast.LENGTH_LONG).show();
+                result = new RequestAsync().execute().get();
+                System.out.println("xxxxxxxxxxxxxxx");
+                System.out.println(result);
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -95,5 +112,22 @@ public class SmsAllFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public class RequestAsync extends AsyncTask<String,String,String> {
+
+        @Override
+        protected String doInBackground(String... strings) {
+            try {
+                JSONObject postDataParams = new JSONObject();
+                postDataParams.put("type", "OTP");
+
+                result =  RequestHandler.sendGet(BuildConfig.SERVER_URL + "/messages");
+                return result;
+            }
+            catch(Exception e){
+                return new String("Exception: " + e.getMessage());
+            }
+        }
     }
 }

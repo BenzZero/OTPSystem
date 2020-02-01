@@ -15,11 +15,13 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class RequestHandler {
 
-    public static String sendPost(String r_url , JSONObject postDataParams) throws Exception {
+
+    public static String sendPost(String r_url, JSONObject postDataParams) throws Exception {
         URL url = new URL(r_url);
 
+        SharedData sharedData = SharedData.getInstance();
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setRequestProperty ("authorization", "xxxxxxx");
+        conn.setRequestProperty ("authorization", sharedData.getToken());
         conn.setReadTimeout(200000);
         conn.setConnectTimeout(200000);
         conn.setRequestMethod("POST");
@@ -52,8 +54,9 @@ public class RequestHandler {
     public static String sendGet(String url) throws IOException {
         URL obj = new URL(url);
 
+        SharedData sharedData = SharedData.getInstance();
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        con.setRequestProperty ("authorization", "xxxxxxx");
+        con.setRequestProperty ("authorization", sharedData.getToken());
         con.setRequestMethod("GET");
         int responseCode = con.getResponseCode();
         System.out.println("Response Code :: " + responseCode);

@@ -10,6 +10,7 @@ const router = express.Router()
 const setting_account_get = async (req, res, next) => {
   try {
     const { id } = req.decoded
+    console.log(id)
     const db = await loadDB()
     await db.query(`SELECT username, name, role, status FROM users WHERE id = ${id}`, (err, results) => {
       if (err) throw err
