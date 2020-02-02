@@ -7,7 +7,7 @@ const messages = async (req, res, next) => {
     const { type } = req.query
     console.log(type)
     const db = await loadDB()
-    await db.query(`SELECT id, messages, bankname, type, createdAt FROM messages ${type ? `WHERE TYPE='${type}'` : ''} ORDER BY id DESC LIMIT 5`, (err, results) => {
+    await db.query(`SELECT id, messages, bankname, type, money, otp, createdAt FROM messages ${type ? `WHERE TYPE='${type}'` : ''} ORDER BY id DESC LIMIT 5`, (err, results) => {
       if (err) throw err
       return res.json(results.reverse())
     })

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -66,16 +67,6 @@ public class SettingFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            try {
-                Toast.makeText(getContext(), "SETTING", Toast.LENGTH_LONG).show();
-                result = new RequestAsync().execute().get();
-                System.out.println("xxxxxxxxxxxxxxx");
-                System.out.println(result);
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -83,7 +74,23 @@ public class SettingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_setting, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_setting, container, false);
+        SharedData sharedData = SharedData.getInstance();
+
+        try {
+            Toast.makeText(getContext(), "SETTING", Toast.LENGTH_LONG).show();
+            result = new RequestAsync().execute().get();
+            System.out.println("xxxxxxxxxxxxxxx");
+            System.out.println(result);
+
+            TextView name = (TextView) rootView.findViewById(R.id.tv_name);
+            name.setText(sharedData.getName());
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

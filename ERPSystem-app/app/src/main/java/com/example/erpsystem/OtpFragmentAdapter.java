@@ -54,8 +54,8 @@ public class OtpFragmentAdapter extends BaseAdapter {
             System.out.println("cccccccccc");
             System.out.println(strDate);
             System.out.println(itemsObject.getString("messages"));
-//            TextView tv_otp = (TextView)view.findViewById(R.id.tv_otp);
-//            tv_otp.setText(itemsObject.getString("otp"));
+            TextView tv_otp = (TextView)view.findViewById(R.id.tv_otp);
+            tv_otp.setText(itemsObject.getString("otp"));
 
             TextView tv_time = (TextView)view.findViewById(R.id.tv_time);
             tv_time.setText(strDate.toString());

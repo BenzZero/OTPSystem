@@ -5,9 +5,9 @@ import loadDB from '../config/db'
 import log4js from 'log4js'
 const logErr = log4js.getLogger('error')
 
-const broadcast = (clients, message) => {
+const broadcast = (clients, messages) => {
   clients.forEach((client) => {
-    client.send(message);
+    client.send(messages);
   });
 };
 
@@ -27,14 +27,15 @@ const messages = async (ws, req) => {
   ws.on('message', async (msg) => {
     const db = await loadDB()
     try {
-      const { message, type, bankname } = JSON.parse(msg)
-      if (message && type && bankname) {
-        await db.query(`INSERT INTO messages (messages, type, bankname, users_id) VALUES ('${message}', '${type}', '${bankname}', 1)`, (err, results) => {
+      const { messages, type, bankname, money, otp } = JSON.parse(msg)
+      if (messages && type && bankname) {
+        await db.query(`INSERT INTO messages (messages, type, bankname, money, otp, users_id) VALUES ('${messages}', '${type}', '${bankname}', '${money}', '${otp}', 1)`, (err, results) => {
           if (!err) {
             broadcast(aWss.clients, msg)
           } else {
             ws.send('400')
           }
+          console.log(err)
         })
       }
     } catch (e) {

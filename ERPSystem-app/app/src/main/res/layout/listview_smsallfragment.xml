@@ -31,7 +31,7 @@
                 android:layout_height="29dp"
                 android:layout_weight="1"
                 android:gravity="center|left"
-                android:text="message" />
+                android:text="messages" />
 
 
         </LinearLayout>
