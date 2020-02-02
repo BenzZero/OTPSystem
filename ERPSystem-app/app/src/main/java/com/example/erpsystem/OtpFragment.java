@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -67,19 +68,6 @@ public class OtpFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-            try {
-                Toast.makeText(getContext(), "OTP", Toast.LENGTH_LONG).show();
-                result = new RequestAsync().execute().get();
-                JSONArray results = new JSONArray(result);
-                System.out.println("xxxxx");
-                System.out.println(results);
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -87,7 +75,27 @@ public class OtpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_otp, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_otp, container, false);
+        try {
+            Toast.makeText(getContext(), "OTP", Toast.LENGTH_LONG).show();
+            result = new RequestAsync().execute().get();
+            JSONArray results = new JSONArray(result);
+            System.out.println("xxxxx");
+            System.out.println(results);
+
+            OtpFragmentAdapter adapter = new OtpFragmentAdapter(getContext(), results);
+            ListView listView = (ListView) rootView.findViewById(R.id.lv_otp);
+            listView.setAdapter(adapter);
+
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

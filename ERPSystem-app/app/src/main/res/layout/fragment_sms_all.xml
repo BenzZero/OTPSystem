@@ -6,9 +6,14 @@
     tools:context=".SmsAllFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="SmsAllFragment" />-->
+
+    <ListView
+        android:id="@+id/lv_sms_all"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SmsAllFragment" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>
