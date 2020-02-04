@@ -91,7 +91,7 @@ public class MySmsReceiver extends BroadcastReceiver {
                     }
                     JSONObject postDataParams = new JSONObject();
                     try {
-                        postDataParams.put("message", strMessage);
+                        postDataParams.put("messages", strMessage);
                         postDataParams.put("type", type);
                         postDataParams.put("bankname", bankname);
                     } catch (JSONException e) {

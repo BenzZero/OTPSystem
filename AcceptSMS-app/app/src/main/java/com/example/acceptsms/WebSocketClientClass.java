@@ -13,7 +13,7 @@ public class WebSocketClientClass {
         URI uri;
         try {
             // Connect to local host
-            uri = new URI(BuildConfig.SERVER_URLWS + "/messages/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6eyJpZCI6NywidXNlcm5hbWUiOiJiZW56In0sImlhdCI6MTU4MDE4OTk4OSwiZXhwIjoxNTgwMjc2Mzg5fQ.2yq3z7hRcU5A6O4-uWL9CpZBdKrQE9PzghwlduvAcwQ");
+            uri = new URI(BuildConfig.SERVER_URLWS + "/socket/messages/sms00c3929506d431a87cd036be3f048349");
         }
         catch (URISyntaxException e) {
             e.printStackTrace();

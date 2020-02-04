@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { AuthenService } from './authen.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,11 +9,17 @@ import { environment } from 'src/environments/environment';
 export class MessagesService {
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private authen: AuthenService
   ) { }
 
   getMessages(type: string): Object {
-    return this.http.post(`${environment.apiUrl}/messages`, { type })
+    let headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/json');
+    headers.append('authorization', `Bearer ${this.authen.getAuthen()}`);
+    let params = new HttpParams();
+    params.append("type", type)
+    return this.http.get(`${environment.apiUrl}/messages`, { headers: headers, params: params })
       .toPromise().then((res: Response) => res)
   }
 }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MessagesService } from 'src/app/service/messages.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-messages',
@@ -17,13 +16,8 @@ export class MessagesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.sub = this.router.params.subscribe(params => this.type = params.type)
-    const id: Observable<string> = this.router.params.pipe(<any>map(p => p.type));
-    console.log(this.router.params)
-    // this.messages.getMessages()
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.sub = this.router.snapshot.paramMap.get('type')
+    console.log(this.sub)
+    this.messages.getMessages(this.sub)
   }
 }
