@@ -1,17 +1,27 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenService {
-
+  authorization = 'authorization'
   constructor(
     private http: HttpClient
   ) { }
 
+  setAuthen(token: string) {
+    localStorage.setItem(this.authorization, token)
+  }
+
+  getAuthen(): string {
+    return localStorage.getItem(this.authorization)
+  }
+
+
   isAuthen() {
-    let currentState = localStorage.getItem('authorization')
+    let currentState = localStorage.getItem(this.authorization)
     if (currentState) {
       return true
     } else {
@@ -19,24 +29,12 @@ export class AuthenService {
     }
   }
 
-  login(username: string, password: string) {
-    console.log(username, password)
-    // return this.http.post<any>(`api/users/authenticate`, { username, password })
-    //   .pipe(map(user => {
-    //     // login successful if there's a jwt token in the response
-    //     if (user && user.token) {
-    //       // store user details and jwt token in local storage to keep user logged in between page refreshes
-    //       localStorage.setItem('currentUser', JSON.stringify(user));
-    //       // this.currentUserSubject.next(user);
-    //     }
-
-    //     return user;
-    //   }));
+  login(username: string, password: string): Object {
+    return this.http.post(`${environment.apiUrl}/login`, { username, password })
+      .toPromise().then((res: Response) => res)
   }
 
   logout() {
-    // remove user from local storage to log user out
-    localStorage.removeItem('currentUser');
-    // this.currentUserSubject.next(null);
+    localStorage.removeItem(this.authorization);
   }
 }

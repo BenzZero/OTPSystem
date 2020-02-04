@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router'
 import { appRoutes } from './routes/routes.root';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -14,6 +15,7 @@ import { CanActivateAuthGuard } from './routes/can-activate-auth.guard';
 import { AuthenService } from './service/authen.service';
 import { AuthenComponent } from './templates/authen/authen.component';
 import { GeneralComponent } from './templates/general/general.component';
+import { MessagesService } from './service/messages.service';
 
 @NgModule({
   declarations: [
@@ -29,10 +31,12 @@ import { GeneralComponent } from './templates/general/general.component';
   imports: [
     HttpClientModule,
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
     CanActivateAuthGuard,
+    MessagesService,
     AuthenService
   ],
   bootstrap: [AppComponent]

@@ -1,16 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { AuthenService } from 'src/app/service/authen.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
-  constructor() { }
+  username = ''
+  password = ''
+  constructor(
+    private authen: AuthenService,
+    private router: Router
+  ) { }
 
-  ngOnInit() {}
-  onSubmit() {
-    console.log(this)
+  ngOnInit() { }
+  async onSubmit() {
+    let res = <any>await this.authen.login(this.username, this.password)
+    if (res.success) {
+      this.authen.setAuthen(res.token)
+      this.router.navigate(['/messages'])
+    } else {
+      console.log(res.error)
+    }
     return false
   }
+
+
 }
