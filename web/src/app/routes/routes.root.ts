@@ -6,10 +6,10 @@ import { MessagesComponent } from '../components/messages/messages.component';
 
 export const appRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'messages/:type', component: MessagesComponent, canActivate: [CanActivateAuthGuard] },
-  { path: 'setting', component: MessagesComponent, canActivate: [CanActivateAuthGuard] },
-  { path: 'NotFound', component: NotfoundComponent },
+  { path: 'login', component: LoginComponent, pathMatch: 'full' },
+  { path: 'messages/:type', component: MessagesComponent, canActivate: [CanActivateAuthGuard], pathMatch: 'full' },
+  { path: 'setting', component: MessagesComponent, canActivate: [CanActivateAuthGuard], pathMatch: 'full' },
+  { path: 'NotFound', component: NotfoundComponent, pathMatch: 'full' },
   { path: '*path', redirectTo: 'NotFound' },
   { path: '**', redirectTo: 'NotFound' }
 ]

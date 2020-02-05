@@ -14,12 +14,19 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    if (this.authen.isAuthen()) {
+      this.router.navigate(['messages', ''])
+    } else {
+      this.router.navigate(['login'])
+    }
+  }
+
   async onSubmit() {
     let res = <any>await this.authen.login(this.username, this.password)
     if (res.success) {
       this.authen.setAuthen(res.token)
-      this.router.navigate(['/messages'])
+      this.router.navigate(['messages'])
     } else {
       console.log(res.error)
     }

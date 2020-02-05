@@ -7,17 +7,17 @@ import { MessagesService } from 'src/app/service/messages.service';
   templateUrl: './messages.component.html'
 })
 export class MessagesComponent implements OnInit {
-  type: string
+  messages: Array<object>
   private sub: any
 
   constructor(
     private router: ActivatedRoute,
-    private messages: MessagesService
+    private messagesService: MessagesService
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.sub = this.router.snapshot.paramMap.get('type')
-    console.log(this.sub)
-    this.messages.getMessages(this.sub)
+    this.messages = await <object[]>this.messagesService.getMessages(this.sub)
+    console.log(this.messages)
   }
 }

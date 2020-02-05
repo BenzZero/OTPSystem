@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router'
 import { appRoutes } from './routes/routes.root';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -26,7 +27,8 @@ import { MessagesService } from './service/messages.service';
     FooterComponent,
     NotfoundComponent,
     AuthenComponent,
-    GeneralComponent
+    GeneralComponent,
+    TimeAgoPipe
   ],
   imports: [
     HttpClientModule,
