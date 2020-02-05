@@ -5,11 +5,15 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" [routerLink]="['/messages', 'OTP']">OPT</a>
-      <a class="nav-item nav-link active" [routerLink]="['/messages', 'MONEY']">MONEY</a>
-      <a class="nav-item nav-link active" [routerLink]="['/messages', '']">SMS</a>
-      <a class="nav-item nav-link active" routerLink="/setting">SETTING</a>
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <a class="nav-item nav-link" [routerLink]="['/messages', 'OTP']">OPT</a>
+      <a class="nav-item nav-link" [routerLink]="['/messages', 'MONEY']">MONEY</a>
+      <a class="nav-item nav-link" [routerLink]="['/messages', '']">SMS</a>
+      <a class="nav-item nav-link" routerLink="/setting">SETTING</a>
+    </div>
+    <div class="navbar-nav my-2 my-lg-0 user-info">
+      <a class="nav-item nav-link active">SETTING</a>
+      <a class="nav-item nav-link" (click)="onClickLogout()">Logout</a>
     </div>
   </div>
 </nav>

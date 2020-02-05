@@ -8,16 +8,32 @@ import { MessagesService } from 'src/app/service/messages.service';
 })
 export class MessagesComponent implements OnInit {
   messages: Array<object>
-  private sub: any
-
+  param: string
+  sub: any
+  
   constructor(
     private router: ActivatedRoute,
     private messagesService: MessagesService
   ) { }
 
-  async ngOnInit() {
-    this.sub = this.router.snapshot.paramMap.get('type')
-    this.messages = await <object[]>this.messagesService.getMessages(this.sub)
+  ngOnInit() {
+    console.log('ngOnInit')
+    this.sub = this.router.params.subscribe(params => {
+      this.param = params['type'];
+      this.ngCallService(); // reset and set based on new parameter this time
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+    console.log('ngOnDestroy')
+    console.log(this.param)
+  }
+
+  async ngCallService() {
+    this.messages = await <object[]>this.messagesService.getMessages(this.param)
     console.log(this.messages)
   }
+
+
 }

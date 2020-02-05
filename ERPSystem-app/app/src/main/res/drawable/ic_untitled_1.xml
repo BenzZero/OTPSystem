@@ -1,0 +1,4 @@
+<vector android:height="20dp" android:viewportHeight="200"
+    android:viewportWidth="200" android:width="20dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00ff0c" android:name="Ellipse 1" android:pathData="m100.5 5c52.19 0 94.5 42.31 94.5 94.5c0 52.19 -42.31 94.5 -94.5 94.5c-52.19 0 -94.5 -42.31 -94.5 -94.5c0 -52.19 42.31 -94.5 94.5 -94.5z"/>
+</vector>

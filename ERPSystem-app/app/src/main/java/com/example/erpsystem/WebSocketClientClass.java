@@ -46,6 +46,7 @@ public class WebSocketClientClass {
             @Override
             public void onTextReceived(String message) {
                 Log.i("WebSocket", "Message received");
+                System.out.println("aaaaaa");
                 showNotification(message);
             }
             @Override
@@ -81,7 +82,7 @@ public class WebSocketClientClass {
                     new NotificationCompat.Builder(context) // this is context
                             .setSmallIcon(R.mipmap.ic_launcher)
                             .setContentTitle(obj.getString("type") + " " + obj.getString("bankname"))
-                            .setContentText(obj.getString("message"))
+                            .setContentText(obj.getString("messages"))
                             .setAutoCancel(true)
                             .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                             .build();

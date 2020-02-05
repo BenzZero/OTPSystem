@@ -19,11 +19,13 @@
 
             <TextView
                 android:id="@+id/tv_status"
-                android:layout_width="30dp"
+                android:layout_width="29dp"
                 android:layout_height="29dp"
+                android:drawableStart="@drawable/ic_untitled_1"
                 android:gravity="center"
-                android:text="status"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tv_message"

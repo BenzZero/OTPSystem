@@ -17,6 +17,7 @@ import { AuthenService } from './service/authen.service';
 import { AuthenComponent } from './templates/authen/authen.component';
 import { GeneralComponent } from './templates/general/general.component';
 import { MessagesService } from './service/messages.service';
+import { SettingComponent } from './components/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MessagesService } from './service/messages.service';
     NotfoundComponent,
     AuthenComponent,
     GeneralComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    SettingComponent
   ],
   imports: [
     HttpClientModule,

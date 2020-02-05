@@ -26,7 +26,8 @@ export class LoginComponent implements OnInit {
     let res = <any>await this.authen.login(this.username, this.password)
     if (res.success) {
       this.authen.setAuthen(res.token)
-      this.router.navigate(['messages'])
+      this.authen.setUser({ id: res.id, username: res.username })
+      this.router.navigate(['messages', ''])
     } else {
       console.log(res.error)
     }

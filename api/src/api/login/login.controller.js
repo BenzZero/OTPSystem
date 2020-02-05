@@ -9,7 +9,6 @@ const router = express.Router()
 
 const login = async (req, res, next) => {
   const { username, password } = req.body
-  console.log(req.body)
   try {
     const db = await loadDB()
     if (username && password) {
@@ -19,7 +18,7 @@ const login = async (req, res, next) => {
           const loginStatus = bcrypt.compareSync(password, results[0].password)
           if (loginStatus) {
             const token = signin({ id: results[0].id, username })
-            return res.json({ success: 'login success', token, username: results[0].username, name: results[0].name, role: results[0].role })
+            return res.json({ success: 'login success', token, id: results[0].id, username: results[0].username, name: results[0].name, role: results[0].role })
           }
         }
         return res.json({ error: 'login failed' })

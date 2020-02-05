@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { async } from '@angular/core/testing';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenService {
   authorization = 'authorization'
+  user = {}
+
   constructor(
     private http: HttpClient
   ) { }
@@ -15,16 +18,39 @@ export class AuthenService {
     localStorage.setItem(this.authorization, token)
   }
 
+  getUser(): object {
+    return this.user
+  }
+
+  setUser(user: object) {
+    this.user = user
+  }
+
   getAuthen(): string {
     return localStorage.getItem(this.authorization)
   }
-
 
   isAuthen() {
     let currentState = localStorage.getItem(this.authorization)
     if (currentState) {
       return true
     } else {
+      return false
+    }
+  }
+
+  async checkToken() {
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'authorization': `Bearer ${this.getAuthen()}`
+    });
+    let checkToken = await <any>this.http.get(`${environment.apiUrl}/checkToken`, { headers: headers })
+      .toPromise().then((res: Response) => res)
+    if (checkToken.id) {
+      this.setUser(checkToken)
+      return true
+    } else {
+      this.logout()
       return false
     }
   }

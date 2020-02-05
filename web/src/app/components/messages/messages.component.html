@@ -1,10 +1,12 @@
 <app-header></app-header>
-<div *ngFor="let item of messages" class="list-group">
-  <div class="list-group-item list-group-item-action active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>
-      <small>{{item.createdAt | timeAgo}}</small>
+<div class="container">
+  <div *ngFor="let item of messages" class="p-1">
+    <div class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>
+        <small>{{item.createdAt | timeAgo}}</small>
+      </div>
+      <p class="mb-1">{{item.messages}}</p>
     </div>
-    <p class="mb-1">{{item.messages}}</p>
   </div>
 </div>

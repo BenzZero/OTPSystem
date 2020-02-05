@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Routes } from '@angular/router';
-import { Location } from '@angular/common';
+import { AuthenService } from './service/authen.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,14 @@ import { Location } from '@angular/common';
 })
 export class AppComponent {
   title = 'web';
+
+  constructor(
+    private authen: AuthenService,
+    private router: Router
+  ) { }
+
+  async ngOnInit() {
+    await this.authen.checkToken()
+    this.router.navigate(['login'])
+  }
 }

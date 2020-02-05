@@ -11,18 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8915d8d3-d67e-4144-b1e8-33f1d915436b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ERPSystem-app/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ERPSystem-app/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/src/ws/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/ws/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../api/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/api/login/login.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/api/login/login.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/components/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/components/messages/messages.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../web/src/app/components/messages/messages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/components/messages/messages.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/routes/routes.root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/routes/routes.root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/app/service/authen.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/app/service/authen.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/src/assets/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../web/src/assets/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_P3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_P1" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -52,48 +55,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="95" column="65" lean-forward="true" selection-start-line="95" selection-start-column="65" selection-end-line="95" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/Notification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/RequestHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="33" selection-end-column="53" />
+            <state relative-caret-position="185">
+              <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -154,16 +121,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/RequestHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+    <option name="width" value="1718" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -174,40 +141,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="acceptsms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AcceptSMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AcceptSMS-app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AcceptSMS" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -330,11 +282,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1718" height="1047" extended-state="1" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21150729" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15741858" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -458,16 +409,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -476,10 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        <state relative-caret-position="220">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="95" column="65" selection-start-line="95" selection-start-column="65" selection-end-line="95" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -499,22 +457,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="33" selection-end-column="53" />
+        <state relative-caret-position="22">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="33" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/WebSocketClientClass.java">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/acceptsms/MySmsReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="95" column="65" lean-forward="true" selection-start-line="95" selection-start-column="65" selection-end-line="95" selection-end-column="65" />
+        <state relative-caret-position="185">
+          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
