@@ -31,6 +31,7 @@ let checkToken = (req, res, next) => {
 }
 
 const setupRoutes = function (app) {
+  console.log('api connect')
   app.use(`/${conf.apiName}/login`, require('./api/login/login.controller'))
   app.use(`/${conf.apiName}/register`, require('./api/register/register.controller'))
   app.use(`/${conf.apiName}/checkToken`, checkToken, require('./api/checkToken/checkToken.controller'))

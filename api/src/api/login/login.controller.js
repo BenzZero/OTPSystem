@@ -9,6 +9,9 @@ const router = express.Router()
 
 const login = async (req, res, next) => {
   const { username, password } = req.body
+  console.log('api connect')
+  console.log(username, password)
+
   try {
     const db = await loadDB()
     if (username && password) {

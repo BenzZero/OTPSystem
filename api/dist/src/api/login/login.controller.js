@@ -41,19 +41,23 @@ var login = function () {
         switch (_context.prev = _context.next) {
           case 0:
             _req$body = req.body, username = _req$body.username, password = _req$body.password;
-            _context.prev = 1;
-            _context.next = 4;
+
+            console.log('api connect');
+            console.log(username, password);
+
+            _context.prev = 3;
+            _context.next = 6;
             return (0, _db2.default)();
 
-          case 4:
+          case 6:
             db = _context.sent;
 
             if (!(username && password)) {
-              _context.next = 10;
+              _context.next = 12;
               break;
             }
 
-            _context.next = 8;
+            _context.next = 10;
             return db.query('SELECT * FROM users WHERE username = \'' + username + '\'', function (err, results) {
               if (err) throw err;
               if (results.length > 0) {
@@ -66,30 +70,30 @@ var login = function () {
               return res.json({ error: 'login failed' });
             });
 
-          case 8:
-            _context.next = 11;
+          case 10:
+            _context.next = 13;
             break;
 
-          case 10:
+          case 12:
             return _context.abrupt('return', res.json({ error: 'required', username: username, password: password }));
 
-          case 11:
-            _context.next = 17;
+          case 13:
+            _context.next = 19;
             break;
 
-          case 13:
-            _context.prev = 13;
-            _context.t0 = _context['catch'](1);
+          case 15:
+            _context.prev = 15;
+            _context.t0 = _context['catch'](3);
 
             logErr.error(_context.t0);
             return _context.abrupt('return', res);
 
-          case 17:
+          case 19:
           case 'end':
             return _context.stop();
         }
       }
-    }, _callee, undefined, [[1, 13]]);
+    }, _callee, undefined, [[3, 15]]);
   }));
 
   return function login(_x, _x2, _x3) {
