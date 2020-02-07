@@ -18,6 +18,10 @@ const loadDB = async () => {
       multipleStatements: true
     })
     con.connect(function (err) {
+      console.log("--------");
+      console.log(process.env.NODE_ENV)
+      console.log("--------");
+
       if (!err) {
         console.log("Database is connected ... nn");
         db = con

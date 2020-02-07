@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "build": "rimraf dist/ && babel ./ -d dist/  --out-dir dist/ --ignore ./node_modules,./test,./.babelrc,./logs,./npm-debug.log --copy-files",
-    "serve": "node dist/server.js",
+    "build": "set NODE_ENV=production && rimraf dist/ && babel ./ -d dist/  --out-dir dist/ --ignore ./node_modules,./test,./.babelrc,./logs,./npm-debug.log --copy-files",
+    "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
