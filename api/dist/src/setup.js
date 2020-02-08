@@ -77,7 +77,7 @@ var checkToken = function checkToken(req, res, next) {
 };
 
 var setupRoutes = function setupRoutes(app) {
-  console.log('api connect');
+  console.log('/' + _config2.default.apiName + '/ api connect');
   app.use('/' + _config2.default.apiName + '/login', require('./api/login/login.controller'));
   app.use('/' + _config2.default.apiName + '/register', require('./api/register/register.controller'));
   app.use('/' + _config2.default.apiName + '/checkToken', checkToken, require('./api/checkToken/checkToken.controller'));
