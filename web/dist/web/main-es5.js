@@ -2128,7 +2128,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var environment = {
       production: false,
-      apiUrl: 'http://127.0.0.1:3000/api'
+      apiUrl: 'http://157.230.243.171:3000/api'
     };
     /*
      * For easier debugging in development mode, you can import the following file
