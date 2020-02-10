@@ -37,9 +37,8 @@ const messages = async (ws, req) => {
     const db = await loadDB()
     try {
       const { messages, type, bankname, money, otp } = JSON.parse(msg)
-      console.log(messages, type, bankname, money, otp)
       if (messages && type && bankname) {
-        await db.query(`INSERT INTO messages (messages, type, bankname, money, otp, users_id) VALUES ('${messages}', '${type}', '${bankname}', '${money || ''}', '${otp || ''}', 1)`, (err, results) => {
+        await db.query(`INSERT INTO messages (messages, type, bankname, money, otp, users_id) VALUES ('${messages}', '${type}', '${bankname}', '${money || 0}', '${otp || ''}', 1)`, (err, results) => {
           if (!err) {
             console.log('scc')
             broadcast(aWss.clients, msg)
