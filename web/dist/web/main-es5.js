@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>notfound works!</p>\r\n";
+    __webpack_exports__["default"] = "<p>notfound works!</p>\n";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>footer works!</p>\r\n";
+    __webpack_exports__["default"] = "<p>footer works!</p>\n";
     /***/
   },
 
@@ -171,7 +171,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header></app-header>\n<div class=\"container\">\n  {{user.username}}\n  <form>\n    <div class=\"form-group\">\n      <label for=\"oldpassword\">Old Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"newpassword\">New Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"confirmpassword\">Confirm Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n  </form>\n</div>";
+    __webpack_exports__["default"] = "<app-header></app-header>\r\n<div class=\"container\">\r\n  {{user.username}}\r\n  <form>\r\n    <div class=\"form-group\">\r\n      <label for=\"oldpassword\">Old Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"newpassword\">New Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmpassword\">Confirm Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n</div>";
     /***/
   },
 
@@ -191,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>authen works!</p>\n";
+    __webpack_exports__["default"] = "<p>authen works!</p>\r\n";
     /***/
   },
 
@@ -211,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>general works!</p>\n";
+    __webpack_exports__["default"] = "<p>general works!</p>\r\n";
     /***/
   },
 
@@ -2128,7 +2128,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var environment = {
       production: false,
-      apiUrl: 'http://157.230.243.171:3000/api'
+      apiUrl: 'http://157.230.243.171/api'
     };
     /*
      * For easier debugging in development mode, you can import the following file
@@ -2207,7 +2207,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Benz\Documents\OTPSystem\web\src\main.ts */
+    /*! C:\Users\banz_\Documents\work_Game\OTPSystem\web\src\main.ts */
     "./src/main.ts");
     /***/
   }
