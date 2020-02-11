@@ -18,6 +18,7 @@ import { AuthenComponent } from './templates/authen/authen.component';
 import { GeneralComponent } from './templates/general/general.component';
 import { MessagesService } from './service/messages.service';
 import { SettingComponent } from './components/setting/setting.component';
+import { DownloadAppComponent } from './components/download-app/download-app.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SettingComponent } from './components/setting/setting.component';
     AuthenComponent,
     GeneralComponent,
     TimeAgoPipe,
-    SettingComponent
+    SettingComponent,
+    DownloadAppComponent
   ],
   imports: [
     HttpClientModule,

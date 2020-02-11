@@ -9,6 +9,7 @@ import { AuthenService } from 'src/app/service/authen.service';
 export class HeaderComponent implements OnInit {
   param: string
   sub: any
+  user: object
 
   constructor(
     private activatedRouter: ActivatedRoute,
@@ -17,6 +18,7 @@ export class HeaderComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+    this.user = this.authen.getUser()
     this.sub = this.activatedRouter.params.subscribe(params => {
       this.param = params['type'];
     });
