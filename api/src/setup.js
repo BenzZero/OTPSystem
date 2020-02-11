@@ -37,6 +37,7 @@ const setupRoutes = function (app) {
   app.use(`/${conf.apiName}/checkToken`, checkToken, require('./api/checkToken/checkToken.controller'))
   app.use(`/${conf.apiName}/messages`, checkToken, require('./api/messages/messages.controller'))
   app.use(`/${conf.apiName}/setting_account`, checkToken, require('./api/setting_account/setting_account.controller'))
+  app.use(`/${conf.apiName}/files-apk`, checkToken, require('./api/files-apk/files-apk.controller'))
   app.ws(`/${conf.apiName}/socket/messages/:token`, require('./ws'))
 }
 

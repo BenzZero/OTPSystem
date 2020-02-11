@@ -1,5 +1,7 @@
 import express from 'express'
 import loadDB from '../../config/db'
+import log4js from 'log4js'
+const logErr = log4js.getLogger('error')
 const router = express.Router()
 
 const messages = async (req, res, next) => {

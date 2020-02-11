@@ -3,7 +3,8 @@ import bcrypt from 'bcrypt'
 import loadDB from '../../config/db'
 import signin from '../../config/signin'
 import conf from '../../config'
-
+import log4js from 'log4js'
+const logErr = log4js.getLogger('error')
 const router = express.Router()
 
 const register = async (req, res, next) => {
