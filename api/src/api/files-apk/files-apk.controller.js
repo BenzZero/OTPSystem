@@ -1,5 +1,6 @@
 import express from 'express'
-import dir from 'node-dir'
+import fs from 'fs'
+import path from 'path'
 import log4js from 'log4js'
 // import acceptsms from '../../files/apk/accept-sms.apk'
 // import erpsystem from '../../files/apk/erp-system.apk'
@@ -10,10 +11,9 @@ const filesApk = async (req, res, next) => {
   console.log(acceptsms)
   console.log(erpsystem)
   try {
-    // dir.readFiles(__dirname, (err, content) => {
-    //   if (err) throw err;
-    //   console.log('content:', content);
-    // });
+    fs.readdir(path.resolve(__dirname, '..', 'public'), 'utf8', (err, files) => {
+      files.forEach((file) => console.info(file))
+    })
     return res.json({ success: success })
   } catch (e) {
     logErr.error(e)
