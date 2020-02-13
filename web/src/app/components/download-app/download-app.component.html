@@ -1,3 +1,4 @@
 <app-header></app-header>
-<p>download-app works!</p>
-<p>download-app works!</p>
+<div *ngFor="let fileName of filesName && filesName.files">
+  <a (click)="onClickDownloadFileApk(fileName)">{{fileName}}</a>
+</div>

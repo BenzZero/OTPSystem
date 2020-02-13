@@ -19,14 +19,9 @@ const filesApkAll = async (req, res, next) => {
 const filesApkName = async (req, res, next) => {
   try {
     const { name } = req.params
-    let pathFile = path.join(__dirname, '../../..', `public/files/apk`, name)
-    return res.download(pathFile, name, (err) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log('downloading successful');
-      }
-    })
+    const pathFile = path.join(__dirname, '../../..', `public/files/apk`, name)
+    const file = path.resolve(pathFile);
+    res.download(file);
   } catch (e) {
     logErr.error(e)
     return res

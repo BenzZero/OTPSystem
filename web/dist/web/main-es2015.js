@@ -36,6 +36,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n<div *ngFor=\"let fileName of filesName && filesName.files\">\n  <a (click)=\"onClickDownloadFileApk(fileName)\">{{fileName}}</a>\n</div>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/erorrs/notfound/notfound.component.html":
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/erorrs/notfound/notfound.component.html ***!
@@ -45,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>notfound works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>notfound works!</p>\r\n");
 
 /***/ }),
 
@@ -58,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>footer works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>footer works!</p>\r\n");
 
 /***/ }),
 
@@ -71,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>");
 
 /***/ }),
 
@@ -110,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\">\r\n  {{user.username}}\r\n  <form>\r\n    <div class=\"form-group\">\r\n      <label for=\"oldpassword\">Old Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"newpassword\">New Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmpassword\">Confirm Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n<div class=\"container\">\n  {{user.username}}\n  <form>\n    <div class=\"form-group\">\n      <label for=\"oldpassword\">Old Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"newpassword\">New Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"confirmpassword\">Confirm Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n  </form>\n</div>");
 
 /***/ }),
 
@@ -123,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>authen works!</p>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>authen works!</p>\n");
 
 /***/ }),
 
@@ -136,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>general works!</p>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>general works!</p>\n");
 
 /***/ }),
 
@@ -445,6 +458,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _templates_general_general_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./templates/general/general.component */ "./src/app/templates/general/general.component.ts");
 /* harmony import */ var _service_messages_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./service/messages.service */ "./src/app/service/messages.service.ts");
 /* harmony import */ var _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/setting/setting.component */ "./src/app/components/setting/setting.component.ts");
+/* harmony import */ var _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/download-app/download-app.component */ "./src/app/components/download-app/download-app.component.ts");
+
 
 
 
@@ -479,7 +494,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _templates_authen_authen_component__WEBPACK_IMPORTED_MODULE_16__["AuthenComponent"],
             _templates_general_general_component__WEBPACK_IMPORTED_MODULE_17__["GeneralComponent"],
             time_ago_pipe__WEBPACK_IMPORTED_MODULE_7__["TimeAgoPipe"],
-            _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__["SettingComponent"]
+            _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__["SettingComponent"],
+            _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_20__["DownloadAppComponent"]
         ],
         imports: [
             _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"],
@@ -495,6 +511,54 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/download-app/download-app.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/download-app/download-app.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: DownloadAppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DownloadAppComponent", function() { return DownloadAppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_service_files_app_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/service/files-app.service */ "./src/app/service/files-app.service.ts");
+
+
+
+let DownloadAppComponent = class DownloadAppComponent {
+    constructor(filesNameService) {
+        this.filesNameService = filesNameService;
+    }
+    ngOnInit() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.filesName = yield this.filesNameService.getFilesName();
+        });
+    }
+    onClickDownloadFileApk(fileName) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.file = yield this.filesNameService.getFilesNameDownload(fileName);
+            const blob = new Blob([this.file], { type: 'text/apk' });
+            const url = window.URL.createObjectURL(blob);
+            window.open(url);
+        });
+    }
+};
+DownloadAppComponent.ctorParameters = () => [
+    { type: src_app_service_files_app_service__WEBPACK_IMPORTED_MODULE_2__["FilesAppService"] }
+];
+DownloadAppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-download-app',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./download-app.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html")).default
+    })
+], DownloadAppComponent);
 
 
 
@@ -585,6 +649,7 @@ let HeaderComponent = class HeaderComponent {
         this.router = router;
     }
     ngOnInit() {
+        this.user = this.authen.getUser();
         this.sub = this.activatedRouter.params.subscribe(params => {
             this.param = params['type'];
         });
@@ -829,6 +894,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./can-activate-auth.guard */ "./src/app/routes/can-activate-auth.guard.ts");
 /* harmony import */ var _components_messages_messages_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/messages/messages.component */ "./src/app/components/messages/messages.component.ts");
 /* harmony import */ var _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/setting/setting.component */ "./src/app/components/setting/setting.component.ts");
+/* harmony import */ var _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/download-app/download-app.component */ "./src/app/components/download-app/download-app.component.ts");
+
 
 
 
@@ -841,6 +908,7 @@ const appRoutes = [
     { path: 'messages', component: _components_messages_messages_component__WEBPACK_IMPORTED_MODULE_4__["MessagesComponent"], canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]], pathMatch: 'full' },
     { path: 'messages/:type', component: _components_messages_messages_component__WEBPACK_IMPORTED_MODULE_4__["MessagesComponent"], canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]], pathMatch: 'full' },
     { path: 'setting', component: _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_5__["SettingComponent"], canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]], pathMatch: 'full' },
+    { path: 'download-app', component: _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_6__["DownloadAppComponent"], canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]], pathMatch: 'full' },
     { path: 'NotFound', component: _components_erorrs_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_2__["NotfoundComponent"], pathMatch: 'full' },
     { path: '*path', redirectTo: 'NotFound' },
     { path: '**', redirectTo: 'NotFound' }
@@ -928,6 +996,69 @@ AuthenService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         providedIn: 'root'
     })
 ], AuthenService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/service/files-app.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/service/files-app.service.ts ***!
+  \**********************************************/
+/*! exports provided: FilesAppService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilesAppService", function() { return FilesAppService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _authen_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./authen.service */ "./src/app/service/authen.service.ts");
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/* harmony import */ var file_saver__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+let FilesAppService = class FilesAppService {
+    constructor(http, authen) {
+        this.http = http;
+        this.authen = authen;
+    }
+    getFilesName() {
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-Type': 'application/json',
+            'authorization': `Bearer ${this.authen.getAuthen()}`
+        });
+        return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl}/files-apk`, { headers: headers })
+            .toPromise().then((res) => res);
+    }
+    getFilesNameDownload(fileName) {
+        let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-Type': 'application/json',
+            'authorization': `Bearer ${this.authen.getAuthen()}`
+        });
+        return this.http.get(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl}/files-apk/${fileName}`, { headers: headers, responseType: "blob" })
+            .toPromise()
+            .then(blob => {
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_5__["saveAs"])(blob, fileName);
+        })
+            .catch(err => console.error("download error = ", err));
+    }
+};
+FilesAppService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] },
+    { type: _authen_service__WEBPACK_IMPORTED_MODULE_3__["AuthenService"] }
+];
+FilesAppService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], FilesAppService);
 
 
 
@@ -1059,6 +1190,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const environment = {
     production: false,
+    // apiUrl: 'http://127.0.0.1:3000/api'
     apiUrl: 'http://157.230.243.171/api'
 };
 /*
@@ -1108,7 +1240,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\banz_\Documents\work_Game\OTPSystem\web\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Benz\Documents\OTPSystem\web\src\main.ts */"./src/main.ts");
 
 
 /***/ })

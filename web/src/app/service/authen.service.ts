@@ -43,7 +43,7 @@ export class AuthenService {
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'authorization': `Bearer ${this.getAuthen()}`
-    });
+    })
     let checkToken = await <any>this.http.get(`${environment.apiUrl}/checkToken`, { headers: headers })
       .toPromise().then((res: Response) => res)
     if (checkToken.id) {

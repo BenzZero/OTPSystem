@@ -17,7 +17,7 @@ export class MessagesService {
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'authorization': `Bearer ${this.authen.getAuthen()}`
-    });
+    })
     let params = new HttpParams().set('type', type);
     return this.http.get(`${environment.apiUrl}/messages`, { headers: headers, params: params })
       .toPromise().then((res: Response) => res)

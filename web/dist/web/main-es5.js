@@ -56,6 +56,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html":
+  /*!***********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html ***!
+    \***********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsDownloadAppDownloadAppComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-header></app-header>\n<div *ngFor=\"let fileName of filesName && filesName.files\">\n  <a (click)=\"onClickDownloadFileApk(fileName)\">{{fileName}}</a>\n</div>";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/components/erorrs/notfound/notfound.component.html":
   /*!**********************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/erorrs/notfound/notfound.component.html ***!
@@ -71,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>notfound works!</p>\n";
+    __webpack_exports__["default"] = "<p>notfound works!</p>\r\n";
     /***/
   },
 
@@ -91,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>footer works!</p>\n";
+    __webpack_exports__["default"] = "<p>footer works!</p>\r\n";
     /***/
   },
 
@@ -111,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>";
+    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>";
     /***/
   },
 
@@ -171,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header></app-header>\r\n<div class=\"container\">\r\n  {{user.username}}\r\n  <form>\r\n    <div class=\"form-group\">\r\n      <label for=\"oldpassword\">Old Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"newpassword\">New Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmpassword\">Confirm Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n</div>";
+    __webpack_exports__["default"] = "<app-header></app-header>\n<div class=\"container\">\n  {{user.username}}\n  <form>\n    <div class=\"form-group\">\n      <label for=\"oldpassword\">Old Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"newpassword\">New Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"confirmpassword\">Confirm Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n  </form>\n</div>";
     /***/
   },
 
@@ -191,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>authen works!</p>\r\n";
+    __webpack_exports__["default"] = "<p>authen works!</p>\n";
     /***/
   },
 
@@ -211,7 +231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>general works!</p>\r\n";
+    __webpack_exports__["default"] = "<p>general works!</p>\n";
     /***/
   },
 
@@ -1013,17 +1033,144 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./components/setting/setting.component */
     "./src/app/components/setting/setting.component.ts");
+    /* harmony import */
+
+
+    var _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! ./components/download-app/download-app.component */
+    "./src/app/components/download-app/download-app.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"], _components_messages_messages_component__WEBPACK_IMPORTED_MODULE_9__["MessagesComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"], _components_erorrs_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__["NotfoundComponent"], _templates_authen_authen_component__WEBPACK_IMPORTED_MODULE_16__["AuthenComponent"], _templates_general_general_component__WEBPACK_IMPORTED_MODULE_17__["GeneralComponent"], time_ago_pipe__WEBPACK_IMPORTED_MODULE_7__["TimeAgoPipe"], _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__["SettingComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _components_login_login_component__WEBPACK_IMPORTED_MODULE_11__["LoginComponent"], _components_messages_messages_component__WEBPACK_IMPORTED_MODULE_9__["MessagesComponent"], _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"], _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"], _components_erorrs_notfound_notfound_component__WEBPACK_IMPORTED_MODULE_13__["NotfoundComponent"], _templates_authen_authen_component__WEBPACK_IMPORTED_MODULE_16__["AuthenComponent"], _templates_general_general_component__WEBPACK_IMPORTED_MODULE_17__["GeneralComponent"], time_ago_pipe__WEBPACK_IMPORTED_MODULE_7__["TimeAgoPipe"], _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_19__["SettingComponent"], _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_20__["DownloadAppComponent"]],
       imports: [_angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(_routes_routes_root__WEBPACK_IMPORTED_MODULE_4__["appRoutes"])],
       providers: [_routes_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_14__["CanActivateAuthGuard"], _service_messages_service__WEBPACK_IMPORTED_MODULE_18__["MessagesService"], _service_authen_service__WEBPACK_IMPORTED_MODULE_15__["AuthenService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/download-app/download-app.component.ts":
+  /*!*******************************************************************!*\
+    !*** ./src/app/components/download-app/download-app.component.ts ***!
+    \*******************************************************************/
+
+  /*! exports provided: DownloadAppComponent */
+
+  /***/
+  function srcAppComponentsDownloadAppDownloadAppComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DownloadAppComponent", function () {
+      return DownloadAppComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var src_app_service_files_app_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! src/app/service/files-app.service */
+    "./src/app/service/files-app.service.ts");
+
+    var DownloadAppComponent =
+    /*#__PURE__*/
+    function () {
+      function DownloadAppComponent(filesNameService) {
+        _classCallCheck(this, DownloadAppComponent);
+
+        this.filesNameService = filesNameService;
+      }
+
+      _createClass(DownloadAppComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee2() {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    _context2.next = 2;
+                    return this.filesNameService.getFilesName();
+
+                  case 2:
+                    this.filesName = _context2.sent;
+
+                  case 3:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2, this);
+          }));
+        }
+      }, {
+        key: "onClickDownloadFileApk",
+        value: function onClickDownloadFileApk(fileName) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee3() {
+            var blob, url;
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+              while (1) {
+                switch (_context3.prev = _context3.next) {
+                  case 0:
+                    _context3.next = 2;
+                    return this.filesNameService.getFilesNameDownload(fileName);
+
+                  case 2:
+                    this.file = _context3.sent;
+                    blob = new Blob([this.file], {
+                      type: 'text/apk'
+                    });
+                    url = window.URL.createObjectURL(blob);
+                    window.open(url);
+
+                  case 6:
+                  case "end":
+                    return _context3.stop();
+                }
+              }
+            }, _callee3, this);
+          }));
+        }
+      }]);
+
+      return DownloadAppComponent;
+    }();
+
+    DownloadAppComponent.ctorParameters = function () {
+      return [{
+        type: src_app_service_files_app_service__WEBPACK_IMPORTED_MODULE_2__["FilesAppService"]
+      }];
+    };
+
+    DownloadAppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-download-app',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./download-app.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/download-app/download-app.component.html")).default
+    })], DownloadAppComponent);
     /***/
   },
 
@@ -1199,6 +1346,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this = this;
 
+          this.user = this.authen.getUser();
           this.sub = this.activatedRouter.params.subscribe(function (params) {
             _this.param = params['type'];
           });
@@ -1303,17 +1451,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function onSubmit() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee2() {
+          regeneratorRuntime.mark(function _callee4() {
             var res;
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+            return regeneratorRuntime.wrap(function _callee4$(_context4) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context4.prev = _context4.next) {
                   case 0:
-                    _context2.next = 2;
+                    _context4.next = 2;
                     return this.authen.login(this.username, this.password);
 
                   case 2:
-                    res = _context2.sent;
+                    res = _context4.sent;
 
                     if (res.success) {
                       this.authen.setAuthen(res.token);
@@ -1326,14 +1474,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       console.log(res.error);
                     }
 
-                    return _context2.abrupt("return", false);
+                    return _context4.abrupt("return", false);
 
                   case 5:
                   case "end":
-                    return _context2.stop();
+                    return _context4.stop();
                 }
               }
-            }, _callee2, this);
+            }, _callee4, this);
           }));
         }
       }]);
@@ -1437,24 +1585,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngCallService() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee3() {
-            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+          regeneratorRuntime.mark(function _callee5() {
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
               while (1) {
-                switch (_context3.prev = _context3.next) {
+                switch (_context5.prev = _context5.next) {
                   case 0:
-                    _context3.next = 2;
+                    _context5.next = 2;
                     return this.messagesService.getMessages(this.param);
 
                   case 2:
-                    this.messages = _context3.sent;
+                    this.messages = _context5.sent;
                     console.log(this.messages);
 
                   case 4:
                   case "end":
-                    return _context3.stop();
+                    return _context5.stop();
                 }
               }
-            }, _callee3, this);
+            }, _callee5, this);
           }));
         }
       }]);
@@ -1690,6 +1838,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ../components/setting/setting.component */
     "./src/app/components/setting/setting.component.ts");
+    /* harmony import */
+
+
+    var _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../components/download-app/download-app.component */
+    "./src/app/components/download-app/download-app.component.ts");
 
     var appRoutes = [{
       path: '',
@@ -1712,6 +1866,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: 'setting',
       component: _components_setting_setting_component__WEBPACK_IMPORTED_MODULE_5__["SettingComponent"],
+      canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]],
+      pathMatch: 'full'
+    }, {
+      path: 'download-app',
+      component: _components_download_app_download_app_component__WEBPACK_IMPORTED_MODULE_6__["DownloadAppComponent"],
       canActivate: [_can_activate_auth_guard__WEBPACK_IMPORTED_MODULE_3__["CanActivateAuthGuard"]],
       pathMatch: 'full'
     }, {
@@ -1819,17 +1978,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function checkToken() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee4() {
+          regeneratorRuntime.mark(function _callee6() {
             var headers, checkToken;
-            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
               while (1) {
-                switch (_context4.prev = _context4.next) {
+                switch (_context6.prev = _context6.next) {
                   case 0:
                     headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                       'Content-Type': 'application/json',
                       'authorization': "Bearer ".concat(this.getAuthen())
                     });
-                    _context4.next = 3;
+                    _context6.next = 3;
                     return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/checkToken"), {
                       headers: headers
                     }).toPromise().then(function (res) {
@@ -1837,26 +1996,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 3:
-                    checkToken = _context4.sent;
+                    checkToken = _context6.sent;
 
                     if (!checkToken.id) {
-                      _context4.next = 9;
+                      _context6.next = 9;
                       break;
                     }
 
                     this.setUser(checkToken);
-                    return _context4.abrupt("return", true);
+                    return _context6.abrupt("return", true);
 
                   case 9:
                     this.logout();
-                    return _context4.abrupt("return", false);
+                    return _context6.abrupt("return", false);
 
                   case 11:
                   case "end":
-                    return _context4.stop();
+                    return _context6.stop();
                 }
               }
-            }, _callee4, this);
+            }, _callee6, this);
           }));
         }
       }, {
@@ -1888,6 +2047,126 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     AuthenService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
     })], AuthenService);
+    /***/
+  },
+
+  /***/
+  "./src/app/service/files-app.service.ts":
+  /*!**********************************************!*\
+    !*** ./src/app/service/files-app.service.ts ***!
+    \**********************************************/
+
+  /*! exports provided: FilesAppService */
+
+  /***/
+  function srcAppServiceFilesAppServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FilesAppService", function () {
+      return FilesAppService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common/http */
+    "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _authen_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./authen.service */
+    "./src/app/service/authen.service.ts");
+    /* harmony import */
+
+
+    var src_environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! src/environments/environment */
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var file_saver__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! file-saver */
+    "./node_modules/file-saver/dist/FileSaver.min.js");
+    /* harmony import */
+
+
+    var file_saver__WEBPACK_IMPORTED_MODULE_5___default =
+    /*#__PURE__*/
+    __webpack_require__.n(file_saver__WEBPACK_IMPORTED_MODULE_5__);
+
+    var FilesAppService =
+    /*#__PURE__*/
+    function () {
+      function FilesAppService(http, authen) {
+        _classCallCheck(this, FilesAppService);
+
+        this.http = http;
+        this.authen = authen;
+      }
+
+      _createClass(FilesAppService, [{
+        key: "getFilesName",
+        value: function getFilesName() {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-Type': 'application/json',
+            'authorization': "Bearer ".concat(this.authen.getAuthen())
+          });
+          return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl, "/files-apk"), {
+            headers: headers
+          }).toPromise().then(function (res) {
+            return res;
+          });
+        }
+      }, {
+        key: "getFilesNameDownload",
+        value: function getFilesNameDownload(fileName) {
+          var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+            'Content-Type': 'application/json',
+            'authorization': "Bearer ".concat(this.authen.getAuthen())
+          });
+          return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl, "/files-apk/").concat(fileName), {
+            headers: headers,
+            responseType: "blob"
+          }).toPromise().then(function (blob) {
+            Object(file_saver__WEBPACK_IMPORTED_MODULE_5__["saveAs"])(blob, fileName);
+          }).catch(function (err) {
+            return console.error("download error = ", err);
+          });
+        }
+      }]);
+
+      return FilesAppService;
+    }();
+
+    FilesAppService.ctorParameters = function () {
+      return [{
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+      }, {
+        type: _authen_service__WEBPACK_IMPORTED_MODULE_3__["AuthenService"]
+      }];
+    };
+
+    FilesAppService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], FilesAppService);
     /***/
   },
 
@@ -2128,6 +2407,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var environment = {
       production: false,
+      // apiUrl: 'http://127.0.0.1:3000/api'
       apiUrl: 'http://157.230.243.171/api'
     };
     /*
@@ -2207,7 +2487,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\banz_\Documents\work_Game\OTPSystem\web\src\main.ts */
+    /*! C:\Users\Benz\Documents\OTPSystem\web\src\main.ts */
     "./src/main.ts");
     /***/
   }
