@@ -94,30 +94,33 @@ public class MySmsReceiver extends BroadcastReceiver {
                 } else if (msgs[i].getOriginatingAddress().equals("1115") || msgs[i].getOriginatingAddress().equals("GSB")) {
                     bankname = "GSB";
                 }
-
                 if(!bankname.equals("")) {
                     strMessage = msgs[i].getMessageBody();
-                    if(strMessage.indexOf("OTP") == 1) {
+
+                    if(strMessage.indexOf("OTP") >= 0) {
                         type = "OTP";
-                        String REGEX = "\\d\{6}\b";
+                        String REGEX = "\\d{6}\\b";
                         Pattern p = Pattern.compile(REGEX);
-                        Matcher m = p.matcher(INPUT);   // get a matcher object
-                        otp = m[0];
+                        Matcher m = p.matcher(strMessage);   // get a matcher object
+                        while(m.find()) {
+                            otp = strMessage.substring(m.start(), m.end());
+                        }
                     } else if(strMessage.indexOf("เงิน") == 1 || strMessage.indexOf("โอน") == 1) {
+
                         type = "MONEY";
                         money = 1000;
                     }
-                    JSONObject postDataParams = new JSONObject();
-                    try {
-                        postDataParams.put("messages", strMessage);
-                        postDataParams.put("money", money);
-                        postDataParams.put("otp", otp);
-                        postDataParams.put("type", type);
-                        postDataParams.put("bankname", bankname);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    webSocketClient.sendWebSocketClient(postDataParams.toString());
+//                    JSONObject postDataParams = new JSONObject();
+//                    try {
+//                        postDataParams.put("messages", strMessage);
+//                        postDataParams.put("money", money);
+//                        postDataParams.put("otp", otp);
+//                        postDataParams.put("type", type);
+//                        postDataParams.put("bankname", bankname);
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                    webSocketClient.sendWebSocketClient(postDataParams.toString());
                 }
                 try {
                     new RequestAsync(strMessage).execute().get();
