@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'web';
+  title = 'web'
+  isAuthen = false
 
   constructor(
     private authen: AuthenService,
@@ -15,7 +16,11 @@ export class AppComponent {
   ) { }
 
   async ngOnInit() {
-    await this.authen.checkToken()
+    this.isAuthen = await this.authen.checkToken()
     this.router.navigate(['login'])
+  }
+
+  ngDoCheck() {
+    this.isAuthen = this.authen.isAuthen()
   }
 }

