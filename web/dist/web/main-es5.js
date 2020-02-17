@@ -51,7 +51,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<router-outlet></router-outlet>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isAuthen\">\r\n  <app-header></app-header>\r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div *ngIf=\"isAuthen\">\r\n  <app-footer></app-footer>\r\n</div>";
     /***/
   },
 
@@ -71,7 +71,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header></app-header>\n<div *ngFor=\"let fileName of filesName && filesName.files\">\n  <a (click)=\"onClickDownloadFileApk(fileName)\">{{fileName}}</a>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\n  <div *ngFor=\"let fileName of filesName && filesName.files\">\r\n    <a (click)=\"onClickDownloadFileApk(fileName)\" href=\"#\">{{fileName}}</a>\r\n  </div>\r\n</div>";
     /***/
   },
 
@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>notfound works!</p>\r\n";
+    __webpack_exports__["default"] = "<p>notfound works!</p>\n";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>footer works!</p>\r\n";
+    __webpack_exports__["default"] = "<footer class=\"page-footer font-small blue\">\r\n  <div class=\"footer-copyright text-center py-3\">© {{year}} Copyright:\r\n    <a href=\"#\">OTP-System</a>\r\n  </div>\r\n</footer>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>";
+    __webpack_exports__["default"] = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>";
     /***/
   },
 
@@ -171,7 +171,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header></app-header>\r\n<div class=\"container\">\r\n  <div *ngFor=\"let item of messages\" class=\"p-1\">\r\n    <div class=\"list-group-item list-group-item-action\">\r\n      <div class=\"d-flex w-100 justify-content-between\">\r\n        <h5 class=\"mb-1\">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>\r\n        <small>{{item.createdAt | timeAgo}}</small>\r\n      </div>\r\n      <p class=\"mb-1\">{{item.messages}}</p>\r\n    </div>\r\n  </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\n  <div *ngFor=\"let item of messages\" class=\"p-1\">\r\n    <div class=\"list-group-item list-group-item-action\">\r\n      <div class=\"d-flex w-100 justify-content-between\">\r\n        <h5 class=\"mb-1\">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>\r\n        <small>{{item.createdAt | timeAgo}}</small>\r\n      </div>\r\n      <p class=\"mb-1\">{{item.messages}}</p>\r\n    </div>\r\n  </div>\r\n</div>";
     /***/
   },
 
@@ -191,7 +191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-header></app-header>\n<div class=\"container\">\n  {{user.username}}\n  <form>\n    <div class=\"form-group\">\n      <label for=\"oldpassword\">Old Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"newpassword\">New Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"confirmpassword\">Confirm Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n  </form>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\n  {{user.username}}\r\n  <form (ngSubmit)='onSubmitChangePassword()'>\r\n    <div class=\"form-group\">\r\n      <label for=\"oldpassword\">Old Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='oldpassword' name='oldpassword' id=\"oldpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"newpassword\">New Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='newpassword' name='newpassword' id=\"newpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmpassword\">Confirm Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='confirmpassword' name='confirmpassword' id=\"confirmpassword\">\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n</div>";
     /***/
   },
 
@@ -211,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>authen works!</p>\n";
+    __webpack_exports__["default"] = "<p>authen works!</p>\r\n";
     /***/
   },
 
@@ -231,7 +231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>general works!</p>\n";
+    __webpack_exports__["default"] = "<p>general works!</p>\r\n";
     /***/
   },
 
@@ -846,6 +846,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.authen = authen;
         this.router = router;
         this.title = 'web';
+        this.isAuthen = false;
       }
 
       _createClass(AppComponent, [{
@@ -862,15 +863,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     return this.authen.checkToken();
 
                   case 2:
+                    this.isAuthen = _context.sent;
                     this.router.navigate(['login']);
 
-                  case 3:
+                  case 4:
                   case "end":
                     return _context.stop();
                 }
               }
             }, _callee, this);
           }));
+        }
+      }, {
+        key: "ngDoCheck",
+        value: function ngDoCheck() {
+          this.isAuthen = this.authen.isAuthen();
         }
       }]);
 
@@ -1271,7 +1278,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(FooterComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var d = new Date();
+          this.year = d.getFullYear();
+        }
       }]);
 
       return FooterComponent;
@@ -1346,10 +1356,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this = this;
 
-          this.user = this.authen.getUser();
           this.sub = this.activatedRouter.params.subscribe(function (params) {
             _this.param = params['type'];
           });
+        }
+      }, {
+        key: "ngDoCheck",
+        value: function ngDoCheck() {
+          this.user = this.authen.getUser();
         }
       }, {
         key: "onClickLogout",
@@ -1565,7 +1579,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this2 = this;
 
-          console.log('ngOnInit');
           this.sub = this.router.params.subscribe(function (params) {
             _this2.param = params['type'];
 
@@ -1577,8 +1590,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "ngOnDestroy",
         value: function ngOnDestroy() {
           this.sub.unsubscribe();
-          console.log('ngOnDestroy');
-          console.log(this.param);
         }
       }, {
         key: "ngCallService",
@@ -1595,9 +1606,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 2:
                     this.messages = _context5.sent;
-                    console.log(this.messages);
 
-                  case 4:
+                  case 3:
                   case "end":
                     return _context5.stop();
                 }
@@ -1678,6 +1688,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "ngOnInit",
         value: function ngOnInit() {
           this.user = this.authen.getUser();
+        }
+      }, {
+        key: "ngDoCheck",
+        value: function ngDoCheck() {
+          this.user = this.authen.getUser();
+        }
+      }, {
+        key: "onSubmitChangePassword",
+        value: function onSubmitChangePassword() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee6() {
+            var res;
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    if (!(this.confirmpassword === this.newpassword)) {
+                      _context6.next = 6;
+                      break;
+                    }
+
+                    _context6.next = 3;
+                    return this.authen.changePassword(this.oldpassword, this.confirmpassword);
+
+                  case 3:
+                    res = _context6.sent;
+                    _context6.next = 7;
+                    break;
+
+                  case 6:
+                    console.log('password not match');
+
+                  case 7:
+                    return _context6.abrupt("return", false);
+
+                  case 8:
+                  case "end":
+                    return _context6.stop();
+                }
+              }
+            }, _callee6, this);
+          }));
         }
       }]);
 
@@ -1974,21 +2027,57 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
         }
       }, {
-        key: "checkToken",
-        value: function checkToken() {
+        key: "changePassword",
+        value: function changePassword(oldPassword, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee6() {
+          regeneratorRuntime.mark(function _callee7() {
             var headers, checkToken;
-            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
               while (1) {
-                switch (_context6.prev = _context6.next) {
+                switch (_context7.prev = _context7.next) {
                   case 0:
                     headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
                       'Content-Type': 'application/json',
                       'authorization': "Bearer ".concat(this.getAuthen())
                     });
-                    _context6.next = 3;
+                    _context7.next = 3;
+                    return this.http.post("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/setting_account"), {
+                      password: oldPassword,
+                      passwordConfirm: password
+                    }, {
+                      headers: headers
+                    }).toPromise().then(function (res) {
+                      return res;
+                    });
+
+                  case 3:
+                    checkToken = _context7.sent;
+
+                  case 4:
+                  case "end":
+                    return _context7.stop();
+                }
+              }
+            }, _callee7, this);
+          }));
+        }
+      }, {
+        key: "checkToken",
+        value: function checkToken() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee8() {
+            var headers, checkToken;
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+              while (1) {
+                switch (_context8.prev = _context8.next) {
+                  case 0:
+                    headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                      'Content-Type': 'application/json',
+                      'authorization': "Bearer ".concat(this.getAuthen())
+                    });
+                    _context8.next = 3;
                     return this.http.get("".concat(src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl, "/checkToken"), {
                       headers: headers
                     }).toPromise().then(function (res) {
@@ -1996,26 +2085,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 3:
-                    checkToken = _context6.sent;
+                    checkToken = _context8.sent;
 
                     if (!checkToken.id) {
-                      _context6.next = 9;
+                      _context8.next = 9;
                       break;
                     }
 
                     this.setUser(checkToken);
-                    return _context6.abrupt("return", true);
+                    return _context8.abrupt("return", true);
 
                   case 9:
                     this.logout();
-                    return _context6.abrupt("return", false);
+                    return _context8.abrupt("return", false);
 
                   case 11:
                   case "end":
-                    return _context6.stop();
+                    return _context8.stop();
                 }
               }
-            }, _callee6, this);
+            }, _callee8, this);
           }));
         }
       }, {
@@ -2487,7 +2576,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Benz\Documents\OTPSystem\web\src\main.ts */
+    /*! C:\Users\banz_\Documents\work_Game\OTPSystem\web\src\main.ts */
     "./src/main.ts");
     /***/
   }

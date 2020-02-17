@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<router-outlet></router-outlet>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isAuthen\">\r\n  <app-header></app-header>\r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div *ngIf=\"isAuthen\">\r\n  <app-footer></app-footer>\r\n</div>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n<div *ngFor=\"let fileName of filesName && filesName.files\">\n  <a (click)=\"onClickDownloadFileApk(fileName)\">{{fileName}}</a>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <div *ngFor=\"let fileName of filesName && filesName.files\">\r\n    <a (click)=\"onClickDownloadFileApk(fileName)\" href=\"#\">{{fileName}}</a>\r\n  </div>\r\n</div>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>notfound works!</p>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>notfound works!</p>\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>footer works!</p>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<footer class=\"page-footer font-small blue\">\r\n  <div class=\"footer-copyright text-center py-3\">© {{year}} Copyright:\r\n    <a href=\"#\">OTP-System</a>\r\n  </div>\r\n</footer>");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link active\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <a class=\"navbar-brand\">OTP System</a>\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\"\r\n    aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n    <div class=\"navbar-nav mr-auto mt-2 mt-lg-0\">\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', 'OTP']\">OPT</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', 'MONEY']\">MONEY</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" [routerLink]=\"['/messages', '']\">SMS</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"/setting\">SETTING</a>\r\n      <a class=\"nav-item nav-link\" routerLinkActive=\"active\" routerLink=\"/download-app\">DOWNLOAD APP</a>\r\n    </div>\r\n    <div class=\"navbar-nav my-2 my-lg-0 user-info\">\r\n      <a class=\"nav-item nav-link\">{{user.username}}</a>\r\n      <a class=\"nav-item nav-link\" (click)=\"onClickLogout()\">Logout</a>\r\n    </div>\r\n  </div>\r\n</nav>");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\r\n<div class=\"container\">\r\n  <div *ngFor=\"let item of messages\" class=\"p-1\">\r\n    <div class=\"list-group-item list-group-item-action\">\r\n      <div class=\"d-flex w-100 justify-content-between\">\r\n        <h5 class=\"mb-1\">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>\r\n        <small>{{item.createdAt | timeAgo}}</small>\r\n      </div>\r\n      <p class=\"mb-1\">{{item.messages}}</p>\r\n    </div>\r\n  </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <div *ngFor=\"let item of messages\" class=\"p-1\">\r\n    <div class=\"list-group-item list-group-item-action\">\r\n      <div class=\"d-flex w-100 justify-content-between\">\r\n        <h5 class=\"mb-1\">{{item.bankname}} {{item.otp || ''}} {{item.money || ''}}</h5>\r\n        <small>{{item.createdAt | timeAgo}}</small>\r\n      </div>\r\n      <p class=\"mb-1\">{{item.messages}}</p>\r\n    </div>\r\n  </div>\r\n</div>");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n<div class=\"container\">\n  {{user.username}}\n  <form>\n    <div class=\"form-group\">\n      <label for=\"oldpassword\">Old Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"oldpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"newpassword\">New Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"newpassword\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"confirmpassword\">Confirm Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"confirmpassword\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n  </form>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  {{user.username}}\r\n  <form (ngSubmit)='onSubmitChangePassword()'>\r\n    <div class=\"form-group\">\r\n      <label for=\"oldpassword\">Old Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='oldpassword' name='oldpassword' id=\"oldpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"newpassword\">New Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='newpassword' name='newpassword' id=\"newpassword\">\r\n    </div>\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmpassword\">Confirm Password</label>\r\n      <input type=\"password\" class=\"form-control\" [(ngModel)]='confirmpassword' name='confirmpassword' id=\"confirmpassword\">\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n</div>");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>authen works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>authen works!</p>\r\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>general works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<p>general works!</p>\r\n");
 
 /***/ }),
 
@@ -405,12 +405,16 @@ let AppComponent = class AppComponent {
         this.authen = authen;
         this.router = router;
         this.title = 'web';
+        this.isAuthen = false;
     }
     ngOnInit() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
-            yield this.authen.checkToken();
+            this.isAuthen = yield this.authen.checkToken();
             this.router.navigate(['login']);
         });
+    }
+    ngDoCheck() {
+        this.isAuthen = this.authen.isAuthen();
     }
 };
 AppComponent.ctorParameters = () => [
@@ -611,6 +615,8 @@ __webpack_require__.r(__webpack_exports__);
 let FooterComponent = class FooterComponent {
     constructor() { }
     ngOnInit() {
+        var d = new Date();
+        this.year = d.getFullYear();
     }
 };
 FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -649,10 +655,12 @@ let HeaderComponent = class HeaderComponent {
         this.router = router;
     }
     ngOnInit() {
-        this.user = this.authen.getUser();
         this.sub = this.activatedRouter.params.subscribe(params => {
             this.param = params['type'];
         });
+    }
+    ngDoCheck() {
+        this.user = this.authen.getUser();
     }
     onClickLogout() {
         this.authen.logout();
@@ -762,7 +770,6 @@ let MessagesComponent = class MessagesComponent {
         this.messagesService = messagesService;
     }
     ngOnInit() {
-        console.log('ngOnInit');
         this.sub = this.router.params.subscribe(params => {
             this.param = params['type'];
             this.ngCallService(); // reset and set based on new parameter this time
@@ -770,13 +777,10 @@ let MessagesComponent = class MessagesComponent {
     }
     ngOnDestroy() {
         this.sub.unsubscribe();
-        console.log('ngOnDestroy');
-        console.log(this.param);
     }
     ngCallService() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             this.messages = yield this.messagesService.getMessages(this.param);
-            console.log(this.messages);
         });
     }
 };
@@ -817,6 +821,19 @@ let SettingComponent = class SettingComponent {
     }
     ngOnInit() {
         this.user = this.authen.getUser();
+    }
+    ngDoCheck() {
+        this.user = this.authen.getUser();
+    }
+    onSubmitChangePassword() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            let res;
+            if (this.confirmpassword === this.newpassword)
+                res = (yield this.authen.changePassword(this.oldpassword, this.confirmpassword));
+            else
+                console.log('password not match');
+            return false;
+        });
     }
 };
 SettingComponent.ctorParameters = () => [
@@ -961,6 +978,16 @@ let AuthenService = class AuthenService {
         else {
             return false;
         }
+    }
+    changePassword(oldPassword, password) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            let headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'application/json',
+                'authorization': `Bearer ${this.getAuthen()}`
+            });
+            let checkToken = yield this.http.post(`${src_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].apiUrl}/setting_account`, { password: oldPassword, passwordConfirm: password }, { headers: headers })
+                .toPromise().then((res) => res);
+        });
     }
     checkToken() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
@@ -1240,7 +1267,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Benz\Documents\OTPSystem\web\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\banz_\Documents\work_Game\OTPSystem\web\src\main.ts */"./src/main.ts");
 
 
 /***/ })

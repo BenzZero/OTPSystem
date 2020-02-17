@@ -39,6 +39,17 @@ export class AuthenService {
     }
   }
 
+  async changePassword(oldPassword: string, password: string) {
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'authorization': `Bearer ${this.getAuthen()}`
+    })
+    let checkToken = await <any>this.http.post(`${environment.apiUrl}/setting_account`,
+      { password: oldPassword, passwordConfirm: password },
+      { headers: headers })
+      .toPromise().then((res: Response) => res)
+  }
+
   async checkToken() {
     let headers = new HttpHeaders({
       'Content-Type': 'application/json',

@@ -18,11 +18,14 @@ export class HeaderComponent implements OnInit {
     private router: Router
   ) { }
 
-  async ngOnInit() {
-    this.user = await this.authen.getUser()
+  ngOnInit() {
     this.sub = this.activatedRouter.params.subscribe(params => {
       this.param = params['type'];
     });
+  }
+
+  ngDoCheck() {
+    this.user = this.authen.getUser()
   }
 
   onClickLogout() {
