@@ -106,13 +106,13 @@ public class MySmsReceiver extends BroadcastReceiver {
                             otp = strMessage.substring(m.start(), m.end());
                             break;
                         }
-                    } else if(strMessage.indexOf("เงิน") == 1 || strMessage.indexOf("โอน") == 1) {
+                    } else if(strMessage.indexOf("เงิน") >= 0 || strMessage.indexOf("โอน") >= 0) {
                         type = "MONEY";
-                        String REGEX = "[\d]{1,10}[.]{1}[\d]{2}(บาท|บ| บ)";
+                        String REGEX = "\\d*\\.{1}\\d*(บ| บ)";
                         Pattern p = Pattern.compile(REGEX);
                         Matcher m = p.matcher(strMessage);   // get a matcher object
                         while(m.find()) {
-                            money = strMessage.substring(m.start(), m.end());
+                            money = Float.parseFloat(strMessage.substring(m.start(), m.end()-1));
                             break;
                         }
                     }
@@ -139,7 +139,7 @@ public class MySmsReceiver extends BroadcastReceiver {
         }
 
         strMessage = null;
-        money = null;
+        money = 0;
         otp = null;
         type = null;
         bankname = null;
