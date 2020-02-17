@@ -13,6 +13,7 @@ export class SettingComponent implements OnInit {
 
   ngOnInit() {
     this.user = this.authen.getUser()
+    console.log(this.user)
   }
 
 }

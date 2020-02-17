@@ -104,23 +104,29 @@ public class MySmsReceiver extends BroadcastReceiver {
                         Matcher m = p.matcher(strMessage);   // get a matcher object
                         while(m.find()) {
                             otp = strMessage.substring(m.start(), m.end());
+                            break;
                         }
                     } else if(strMessage.indexOf("เงิน") == 1 || strMessage.indexOf("โอน") == 1) {
-
                         type = "MONEY";
-                        money = 1000;
+                        String REGEX = "[\d]{1,10}[.]{1}[\d]{2}(บาท|บ| บ)";
+                        Pattern p = Pattern.compile(REGEX);
+                        Matcher m = p.matcher(strMessage);   // get a matcher object
+                        while(m.find()) {
+                            money = strMessage.substring(m.start(), m.end());
+                            break;
+                        }
                     }
-//                    JSONObject postDataParams = new JSONObject();
-//                    try {
-//                        postDataParams.put("messages", strMessage);
-//                        postDataParams.put("money", money);
-//                        postDataParams.put("otp", otp);
-//                        postDataParams.put("type", type);
-//                        postDataParams.put("bankname", bankname);
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-//                    webSocketClient.sendWebSocketClient(postDataParams.toString());
+                   JSONObject postDataParams = new JSONObject();
+                   try {
+                       postDataParams.put("messages", strMessage);
+                       postDataParams.put("money", money);
+                       postDataParams.put("otp", otp);
+                       postDataParams.put("type", type);
+                       postDataParams.put("bankname", bankname);
+                   } catch (JSONException e) {
+                       e.printStackTrace();
+                   }
+                   webSocketClient.sendWebSocketClient(postDataParams.toString());
                 }
                 try {
                     new RequestAsync(strMessage).execute().get();
@@ -132,9 +138,14 @@ public class MySmsReceiver extends BroadcastReceiver {
             }
         }
 
+        strMessage = null;
+        money = null;
+        otp = null;
+        type = null;
+        bankname = null;
+
         bundle = null;
         msgs = null;
-        strMessage = null;
         format = null;
     }
 

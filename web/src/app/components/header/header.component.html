@@ -6,14 +6,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <a class="nav-item nav-link" [routerLink]="['/messages', 'OTP']">OPT</a>
-      <a class="nav-item nav-link" [routerLink]="['/messages', 'MONEY']">MONEY</a>
-      <a class="nav-item nav-link" [routerLink]="['/messages', '']">SMS</a>
-      <a class="nav-item nav-link" routerLink="/setting">SETTING</a>
-      <a class="nav-item nav-link" routerLink="/download-app">DOWNLOAD APP</a>
+      <a class="nav-item nav-link" routerLinkActive="active" [routerLink]="['/messages', 'OTP']">OPT</a>
+      <a class="nav-item nav-link" routerLinkActive="active" [routerLink]="['/messages', 'MONEY']">MONEY</a>
+      <a class="nav-item nav-link" routerLinkActive="active" [routerLink]="['/messages', '']">SMS</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/setting">SETTING</a>
+      <a class="nav-item nav-link" routerLinkActive="active" routerLink="/download-app">DOWNLOAD APP</a>
     </div>
     <div class="navbar-nav my-2 my-lg-0 user-info">
-      <a class="nav-item nav-link active">{{user.username}}</a>
+      <a class="nav-item nav-link">{{user.username}}</a>
       <a class="nav-item nav-link" (click)="onClickLogout()">Logout</a>
     </div>
   </div>

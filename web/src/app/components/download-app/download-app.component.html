@@ -1,3 +1,5 @@
-<div *ngFor="let fileName of filesName && filesName.files">
-  <a (click)="onClickDownloadFileApk(fileName)">{{fileName}}</a>
+<div class="container">
+  <div *ngFor="let fileName of filesName && filesName.files">
+    <a (click)="onClickDownloadFileApk(fileName)" href="#">{{fileName}}</a>
+  </div>
 </div>

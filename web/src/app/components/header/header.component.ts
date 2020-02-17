@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AuthenService } from 'src/app/service/authen.service';
+import { async } from '@angular/core/testing';
 
 @Component({
   selector: 'app-header',
@@ -15,10 +16,10 @@ export class HeaderComponent implements OnInit {
     private activatedRouter: ActivatedRoute,
     private authen: AuthenService,
     private router: Router
-    ) { }
+  ) { }
 
-  ngOnInit() {
-    this.user = this.authen.getUser()
+  async ngOnInit() {
+    this.user = await this.authen.getUser()
     this.sub = this.activatedRouter.params.subscribe(params => {
       this.param = params['type'];
     });

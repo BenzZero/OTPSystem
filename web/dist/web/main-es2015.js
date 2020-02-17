@@ -1190,7 +1190,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const environment = {
     production: false,
-    // apiUrl: 'http://127.0.0.1:3000/api'
+    // apiUrl: 'http://127.0.0.1:5000/api'
     apiUrl: 'http://157.230.243.171/api'
 };
 /*
