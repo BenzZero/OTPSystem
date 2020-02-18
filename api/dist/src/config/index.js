@@ -25,13 +25,13 @@ var conf = {
       name: packageJson.name,
       version: packageJson.version
     },
-    port: 3000,
+    port: 5000,
     webDomain: 'localhost',
     secretKey: 'demo_secret_key',
     expiresIn: '24hr',
     db: {
       uri: 'localhost',
-      host: '3000',
+      host: 'localhost',
       dbname: 'otpsystem',
       name: 'root',
       password: ''

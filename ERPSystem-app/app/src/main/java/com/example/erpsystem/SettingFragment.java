@@ -80,8 +80,6 @@ public class SettingFragment extends Fragment {
         try {
             Toast.makeText(getContext(), "SETTING", Toast.LENGTH_LONG).show();
             result = new RequestAsync().execute().get();
-            System.out.println("xxxxxxxxxxxxxxx");
-            System.out.println(result);
 
             TextView name = (TextView) rootView.findViewById(R.id.tv_name);
             name.setText(sharedData.getName());

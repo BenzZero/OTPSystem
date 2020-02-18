@@ -41,36 +41,34 @@ var setting_account_get = function () {
           case 0:
             _context.prev = 0;
             id = req.decoded.id;
-
-            console.log(id);
-            _context.next = 5;
+            _context.next = 4;
             return (0, _db2.default)();
 
-          case 5:
+          case 4:
             db = _context.sent;
-            _context.next = 8;
+            _context.next = 7;
             return db.query('SELECT username, name, role, status FROM users WHERE id = ' + id, function (err, results) {
               if (err) throw err;
               return res.json(results);
             });
 
-          case 8:
-            _context.next = 14;
+          case 7:
+            _context.next = 13;
             break;
 
-          case 10:
-            _context.prev = 10;
+          case 9:
+            _context.prev = 9;
             _context.t0 = _context['catch'](0);
 
             logErr.error(_context.t0);
             return _context.abrupt('return', res);
 
-          case 14:
+          case 13:
           case 'end':
             return _context.stop();
         }
       }
-    }, _callee, undefined, [[0, 10]]);
+    }, _callee, undefined, [[0, 9]]);
   }));
 
   return function setting_account_get(_x, _x2, _x3) {
@@ -79,57 +77,92 @@ var setting_account_get = function () {
 }();
 
 var setting_account_set = function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee2(req, res, next) {
-    var _req$body, name, password, passwordConfirm, id, db, hash;
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee3(req, res, next) {
+    var _req$body, name, password, passwordConfirm, id, db;
 
-    return _regenerator2.default.wrap(function _callee2$(_context2) {
+    return _regenerator2.default.wrap(function _callee3$(_context3) {
       while (1) {
-        switch (_context2.prev = _context2.next) {
+        switch (_context3.prev = _context3.next) {
           case 0:
-            _context2.prev = 0;
+            _context3.prev = 0;
             _req$body = req.body, name = _req$body.name, password = _req$body.password, passwordConfirm = _req$body.passwordConfirm;
-
-            if (!(password === passwordConfirm)) {
-              _context2.next = 12;
-              break;
-            }
-
             id = req.decoded.id;
-            _context2.next = 6;
+            _context3.next = 5;
             return (0, _db2.default)();
 
-          case 6:
-            db = _context2.sent;
-            _context2.next = 9;
-            return _bcrypt2.default.hash(password, _config2.default.saltRounds).then(function (hash) {
-              return hash;
-            });
+          case 5:
+            db = _context3.sent;
+            _context3.next = 8;
+            return db.query('SELECT * FROM users WHERE id = \'' + id + '\'', function () {
+              var _ref3 = _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee2(err, results) {
+                var loginStatus, hash;
+                return _regenerator2.default.wrap(function _callee2$(_context2) {
+                  while (1) {
+                    switch (_context2.prev = _context2.next) {
+                      case 0:
+                        if (!err) {
+                          _context2.next = 2;
+                          break;
+                        }
 
-          case 9:
-            hash = _context2.sent;
-            _context2.next = 12;
-            return db.query('UPDATE users SET name=\'' + name + '\', password=\'' + hash + '\' WHERE id = ' + id, function (err, results) {
-              if (err) throw err;
-              return res.json(results);
-            });
+                        throw err;
 
-          case 12:
-            _context2.next = 18;
+                      case 2:
+                        if (!(results.length > 0)) {
+                          _context2.next = 10;
+                          break;
+                        }
+
+                        loginStatus = _bcrypt2.default.compareSync(password, results[0].password);
+
+                        if (!loginStatus) {
+                          _context2.next = 10;
+                          break;
+                        }
+
+                        _context2.next = 7;
+                        return _bcrypt2.default.hash(passwordConfirm, _config2.default.saltRounds).then(function (hash) {
+                          return hash;
+                        });
+
+                      case 7:
+                        hash = _context2.sent;
+                        _context2.next = 10;
+                        return db.query('UPDATE users SET name=\'' + (name || results[0].name) + '\', password=\'' + (hash || results[0].password) + '\' WHERE id = ' + id, function (err, results) {
+                          if (err) throw err;
+                          return res.json(results);
+                        });
+
+                      case 10:
+                      case 'end':
+                        return _context2.stop();
+                    }
+                  }
+                }, _callee2, undefined);
+              }));
+
+              return function (_x7, _x8) {
+                return _ref3.apply(this, arguments);
+              };
+            }());
+
+          case 8:
+            _context3.next = 14;
             break;
 
+          case 10:
+            _context3.prev = 10;
+            _context3.t0 = _context3['catch'](0);
+
+            logErr.error(_context3.t0);
+            return _context3.abrupt('return', res);
+
           case 14:
-            _context2.prev = 14;
-            _context2.t0 = _context2['catch'](0);
-
-            logErr.error(_context2.t0);
-            return _context2.abrupt('return', res);
-
-          case 18:
           case 'end':
-            return _context2.stop();
+            return _context3.stop();
         }
       }
-    }, _callee2, undefined, [[0, 14]]);
+    }, _callee3, undefined, [[0, 10]]);
   }));
 
   return function setting_account_set(_x4, _x5, _x6) {
